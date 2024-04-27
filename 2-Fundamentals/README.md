@@ -43,7 +43,7 @@ You can download it [here](https://code.visualstudio.com/download)
   
 ### Variables and Printing
 **Variable**
-- A **variable** cam be thought of as a container that stores a value. As a programmer you can create your own variables that store different data types. The following is an example of a variable, `hello_world = "This variable holds a string"`
+- A **variable** can be thought of as a container that stores a value. As a programmer you can create your own variables that store different data types. The following is an example of a variable, `hello_world = "This variable holds a string"`
 - In Python, variable names must:
   - Not start with a number.
   - Not contain any special characters other than underscores (_).
@@ -68,3 +68,20 @@ print("Hello", user_name + "!")
 ```
 
 An example of console input can be found at [5_console_input.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/5_console_input.py).
+
+### Arithmetic Operators
+
+**Operator**
+- An **operator** is a symbol that indicates an operation to be performed. `+, -, /, *, **, //` are all operators.
+
+**Operand**
+- An **operand** is an object that an operator acts on. In the expression `2 + 3`, both `2` and `3` are operands while `+` is the operator. 
+
+**Integer Division**
+- **Integer Division** is division in which the fractional part (remainder) is discarded. In Python, integer division is performed by using the `//` operator. For example, the expression `11 // 3` evaluates to `3`.
+
+**Modulus**
+- The **modulus** (or modulo) is the remainder after dividing one number by another. In Python, modulus is performed by using the `%` operator. For example, the experession `10 % 3` evaluates to `1`.
+
+**Concatenation**
+- In Python, **concatenation** is the process of combining or adding strings together. Concatenation can be performed using the `+` operator. For example, the expression `"1" + "word"` evaluates to `"1word"`.
