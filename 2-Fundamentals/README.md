@@ -85,3 +85,5 @@ An example of console input can be found at [5_console_input.py](https://github.
 
 **Concatenation**
 - In Python, **concatenation** is the process of combining or adding strings together. Concatenation can be performed using the `+` operator. For example, the expression `"1" + "word"` evaluates to `"1word"`.
+
+An example of arithmetic operators can be found in [6_arithmetic_operators.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/6_arithmetic_operators.py).
