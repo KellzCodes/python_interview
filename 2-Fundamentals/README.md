@@ -53,3 +53,5 @@ You can download it [here](https://code.visualstudio.com/download)
 
 - The print() function prints the specified message to the screen, or other standard output device.
 - The message can be a string, or any other object, the object will be converted into a string before written to the screen.
+
+An example of variables and printing can be found in [4_variablesAndPrinting.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/4_variablesAndPrinting.py).
