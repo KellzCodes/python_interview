@@ -55,3 +55,16 @@ You can download it [here](https://code.visualstudio.com/download)
 - The message can be a string, or any other object, the object will be converted into a string before written to the screen.
 
 An example of variables and printing can be found in [4_variablesAndPrinting.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/4_variablesAndPrinting.py).
+
+### Console Input
+
+**Input**
+- The input function is built directly into Python as a means to gather user input from the command line. 
+- An important note is that it will always return a `str` object which will need to be converted to an `int` (for example) if you expect the user input to be an integer. 
+
+```
+user_name = input("What is your name? ")
+print("Hello", user_name + "!")
+```
+
+
