@@ -67,4 +67,4 @@ user_name = input("What is your name? ")
 print("Hello", user_name + "!")
 ```
 
-
+An example of console input can be found at [5_console_input.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/5_console_input.py).
