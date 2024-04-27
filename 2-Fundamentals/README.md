@@ -2,13 +2,13 @@
 
 To start using Python you need to download it, which you can do [here](https://www.python.org/)
 
-### VSCode
+## VSCode
 
 VSCode stands for **Visual Studio Code** and is an application that can be used for development and programming purposes.
 It is one of the most popular IDEs (integrated development environments) and is supported and maintained by Microsoft.
 You can download it [here](https://code.visualstudio.com/download)
 
-### Data Types
+## Data Types
 - **Int**
   - In Python, the **int** data type can represent all integers, positive or negative. `..., -2, -1, 0, 1, 2, ...` are all ints in Python.
 - **Float**
@@ -21,7 +21,7 @@ You can download it [here](https://code.visualstudio.com/download)
 - ***`type()` Function***
   - The `type()` function returns the type of the specified object
 
-### Comments
+## Comments
 
 **Comments** are parts of the code that usually get ignored by the compiler or interpreter, and that are solely meant to explain or document a section of the program for future maintainers.
 - `# Single line comment`
@@ -41,7 +41,7 @@ You can download it [here](https://code.visualstudio.com/download)
   """
   ```
   
-### Variables and Printing
+## Variables and Printing
 **Variable**
 - A **variable** can be thought of as a container that stores a value. As a programmer you can create your own variables that store different data types. The following is an example of a variable, `hello_world = "This variable holds a string"`
 - In Python, variable names must:
@@ -56,7 +56,7 @@ You can download it [here](https://code.visualstudio.com/download)
 
 An example of variables and printing can be found in [4_variablesAndPrinting.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/4_variablesAndPrinting.py).
 
-### Console Input
+## Console Input
 
 **Input**
 - The input function is built directly into Python as a means to gather user input from the command line. 
@@ -69,7 +69,7 @@ print("Hello", user_name + "!")
 
 An example of console input can be found at [5_console_input.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/5_console_input.py).
 
-### Arithmetic Operators
+## Arithmetic Operators
 
 **Operator**
 - An **operator** is a symbol that indicates an operation to be performed. `+, -, /, *, **, //` are all operators.
