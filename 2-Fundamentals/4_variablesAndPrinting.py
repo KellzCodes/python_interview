@@ -1,0 +1,10 @@
+x = 3
+print(x) # 3
+y = "hello"
+print(y) # hello
+num = y
+print(num) # hello
+y = x
+print(y) # 3
+x = 4
+print(x) # 4
