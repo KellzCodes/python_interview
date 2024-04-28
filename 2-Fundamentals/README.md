@@ -87,3 +87,81 @@ An example of console input can be found at [5_console_input.py](https://github.
 - In Python, **concatenation** is the process of combining or adding strings together. Concatenation can be performed using the `+` operator. For example, the expression `"1" + "word"` evaluates to `"1word"`.
 
 An example of arithmetic operators can be found in [6_arithmetic_operators.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/6_arithmetic_operators.py).
+
+## Type Conversions
+
+- The act of changing an object’s data type is known as **type conversion**. 
+- The Python interpreter automatically performs Implicit Type Conversion. 
+  - Python prevents Implicit Type Conversion from losing data.
+- The user converts the data types of objects using specified functions in explicit type conversion, sometimes referred to as type casting. 
+  - When type casting, data loss could happen if the object is forced to conform to a particular data type.
+
+**Implicit Type Conversion**
+```
+x = 10
+
+print("x is of type:",type(x))
+
+y = 10.6
+print("y is of type:",type(y))
+
+z = x + y
+
+print(z)
+print("z is of type:",type(z))
+
+```
+
+Output:
+```
+x is of type: <class 'int'>
+y is of type: <class 'float'>
+20.6
+z is of type: <class 'float'>
+```
+
+**Explicit Type Conversion**
+
+```
+# initializing string
+s = "10010"
+
+# printing string converting to int base 2
+c = int(s,2)
+print ("After converting to integer base 2 : ", end="")
+print (c)
+
+# printing string converting to float
+e = float(s)
+print ("After converting to float : ", end="")
+print (e)
+```
+
+Output:
+
+```
+After converting to integer base 2 : 18
+After converting to float : 10010.0
+```
+
+## Conditions
+
+**Condition**
+- A **condition** is any expression that evaluates to `True` or `False`. 
+- The expression `2 == 2` evaluates to `True` and is considered a condition.
+
+Python supports the usual logical conditions from mathematics:
+
+- Equals: `a == b`
+- Not Equals: `a != b`
+- Less than: `a < b`
+- Less than or equal to: `a <= b`
+- Greater than: `a > b`
+- Greater than or equal to: `a >= b`
+
+**ASCII**
+- **ASCII** is the abbreviation for **American Standard Code for Information Interchange**.
+- This code provides a standard character set for computers where each character on the keyboard is represented by a unique integer.
+  - In Python, you can determine the ASCII code for a character by using the `ord()` function and determine the character represented by an integer with the `chr()` function. 
+    - For example, `ord('a')` returns `97` and `chr(97)` returns `'a'`.
+
