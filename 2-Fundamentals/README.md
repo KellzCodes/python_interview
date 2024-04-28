@@ -165,3 +165,71 @@ Python supports the usual logical conditions from mathematics:
   - In Python, you can determine the ASCII code for a character by using the `ord()` function and determine the character represented by an integer with the `chr()` function. 
     - For example, `ord('a')` returns `97` and `chr(97)` returns `'a'`.
 
+
+## Compound Conditions
+
+**And / Or / Not**
+
+- When you want to create larger conditions based on multiple smaller conditions, you will need to use the `and`, `or`, `not` keywords. Conditions that contain these keywords are called **compound conditions**
+
+```
+if x == 1 and y == 2:
+  print("x is equal to 1 and y is equal to 2")
+elif not (x == 2 or y == 2):
+  print("neither x and y are equal to 2"
+```
+
+**De Morgan's Laws**
+- **De Morgan's laws** state:
+  - `not (x and y) == not x or not y`
+  - `not (x or y) == not x and not y`
+- You can use these laws to simplify complex conditions
+
+**ORDER OF OPERATIONS**
+1. parentheses
+2. conditional/comparison operators
+3. not
+4. and 
+5. or
+
+## Conditionals
+
+**if / elif / else**
+- When you want to conditionally run a part of your program (depending on the value of a variable, for example) `if`, `elif`, and `else` statements are necessary:
+
+```
+if x == 1:
+  print("If x is equal to 1, then this will be printed!")
+elif x == 2
+  print("If x is equal to 2, then this will be printed!")
+else:
+  print("If x isn't equal to 1 or 2, then this will be printed!")
+```
+
+## Lists
+
+**List**
+- In Python, a **list** is a data type that stores an ordered collection of elements.
+- You can access individual elements in a list using their indices and add elements to a list by using the `.append(item)` method
+
+Example:
+```
+lst = [1, 10, 4, True, "str"]
+lst.append(2) # lst is now equal to [1, 10, 4, True, "str", 2]
+print(lst[1]) # this outputs to 10
+print(lst[-1] # this outputs to 2
+```
+
+**in**
+
+- The `in` keyword in Python lets you check whether a value is contained in a collection (such as a `list`, `set`, `dict`. etc).
+
+```
+print("hello" in ["hello", "world"]) # True
+```
+
+- The `in` keyword can also be used to iterate of the items in a collection when using a `for` loop.
+
+Examples of what you can do with lists are found in [11_lists.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/11_lists.py).
+
+

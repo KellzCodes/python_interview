@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3dd8f2cb-c7f0-4626-b743-41be8aa74962" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2-Fundamentals/6_arithmetic_operators.py" beforeDir="false" afterPath="$PROJECT_DIR$/2-Fundamentals/6_arithmetic_operators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2-Fundamentals/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/2-Fundamentals/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +48,30 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.6_arithmetic_operators">
+  <component name="RunManager" selected="Python.11_lists">
+    <configuration name="11_lists" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2-Fundamentals" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2-Fundamentals/11_lists.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="4_variablesAndPrinting" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="ENV_FILES" value="" />
@@ -121,6 +143,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.11_lists" />
         <item itemvalue="Python.6_arithmetic_operators" />
         <item itemvalue="Python.4_variablesAndPrinting" />
       </list>
@@ -144,7 +167,7 @@
       <updated>1714181625279</updated>
       <workItem from="1714181626696" duration="8850000" />
       <workItem from="1714255469541" duration="5161000" />
-      <workItem from="1714318894912" duration="518000" />
+      <workItem from="1714318894912" duration="4550000" />
     </task>
     <servers />
   </component>
