@@ -161,3 +161,51 @@ for word in words:
         break
 else:
     print("I didn't find the word!")
+
+'''
+Use a single for loop to iterate through two strings, and print all of their matching characters (i.e., the characters
+that are at the same index and that are equal to each other) each on a separate line.
+'''
+string1 = "aabbcsdw"
+string2 = "abbbcsdd"
+
+for i in range(len(string1)):
+    character1 = string1[i]
+    character2 = string2[i]
+    if character1 == character2:
+        print(character1)
+
+'''
+Use a single for loop to iterate through the provided list, and print the elements that are both divisible by 2 and 
+located at an odd index, each on a separate line.
+'''
+lst = [45, 24, 22, 1, 45, 2, 12, 13, 16, 10, 0, -7]
+
+for i, element in enumerate(lst):
+    if element % 2 == 0 and i % 2 == 1:
+        print(element)
+
+'''
+Use nested for loops to iterate through the provided list, which contains other lists, and print the respective sums of
+the inner lists, each on a separate line.
+'''
+lst = [[2, 3, 4], [-2, -4, 0], [1, 2], [1, 1, 1, 5, 6], [0, 9, 8, 7]]
+
+for inner_list in lst:
+    sum = 0
+    for item in inner_list:
+        sum += item
+    print(sum)
+
+'''
+Use a single for loop to iterate through the provided list of numbers, and for each number, print the sum of the number
+and the one directly to its right. In other words, print lst[i] + lst[i + 1]. Since the last number in the list has no 
+number to the right of it, you should simply skip it.
+'''
+lst = [-2, 0, 4, 5, 1, 2]
+
+for i in range(len(lst) - 1):
+    current = lst[i]
+    next = lst[i + 1]
+    sum = current + next
+    print(sum)
