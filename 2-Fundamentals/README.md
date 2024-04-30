@@ -251,3 +251,84 @@ world
 ```
 
 Examples of what you can do with strings can be found in [12_strings.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/12_strings.py).
+
+## Tuples
+
+**Tuple**
+- A **tuple** is similar to a list in that it stores a collection of elements. 
+- Like lists, you can access individual elements in a tuple using their indices, but you cannot modify or change these elements. 
+
+Example:
+
+```
+tup = (1, 10, 4, True, "str")
+print(tup[1]) # this outputs to 10
+print(tup[-1]) # this outputs to "str"
+tup[1] = 0 # this raises an exception
+tup.append(1) # this raises an exception
+```
+
+Examples of what you can do with tuples can be found in [13_tuples.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/13_tuples.py).
+
+## For Loops
+
+**Range**
+- The `range(start, stop, step)` function in Python creates an iterator that returns integers one by one from `start` (inclusive) to `stop` (exclusive), incrementing the last value by `step` every time.
+- The `range` function is commonly used with `for` loops like so:
+
+```
+for i in range(1, 11, 2):
+    print(i)
+# this loop will output the following:
+# 1
+# 3
+# 5
+# 7
+# 9
+```
+
+Examples of what you can do with for loops are found in [14_for_loops.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/14_for_loops.py).
+
+## While Loops
+
+With the `while` loop we can execute a set of statements as long as a condition is true.
+
+Examples of what you can do with while loops are found in [15_while_loops.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/15_while_loops.py).
+
+## Slices
+
+Slicing is the process of accessing a sub-sequence of a sequence by specifying a starting and ending index. In Python, you perform slicing using the colon : operator. The syntax for slicing is as follows:
+
+`sequence[start_index:end_index]`
+
+For example:
+
+```
+my_list = ['apple', 'banana', 'cherry', 'date']
+print(my_list[1:3]) # output: ['banana', 'cherry']
+```
+
+The slice operator returns a new object that contains the result of the slice. It does not modify the existing object.
+
+A slice can be used on a list, tuple, string, and typically any data type that stores a collection of items.
+
+Examples of what you can do with slices can be found at [16_slices.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/16_slices.py).
+
+## Dictionary
+
+In Python, a **dictionary** (or **dict**) is a collection that associates immutable keys with values of any type. For example, the following code creates and accesses a dictionary that stores the age of each person according to their names:
+
+```
+ages = {
+    "Kelli": 27,
+    "Kimi": 30,
+    "Camille": 7,
+}
+print("Kimi is", ages["Kimi"], "years old"
+```
+
+A dictionary is a good choice when you care about how many times items occur in a collection or if they exist in it at all. This is because determining if an item exists in a dict is much faster than doing so in a list, and you can map an item to its frequency in a dict.
+
+If you're concerned with the order in which items are added to a collection and would like to modify these items, you should use a list. A dictionary doesn't maintain the order in which items are added to it, but a list does. A tuple also maintains the order of items but it's items cannot be modified. 
+
+Examples of what you can do with dictionaries can be found in [17_dictionaries.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/17_dictionaries.py).
