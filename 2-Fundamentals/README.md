@@ -332,3 +332,38 @@ A dictionary is a good choice when you care about how many times items occur in 
 If you're concerned with the order in which items are added to a collection and would like to modify these items, you should use a list. A dictionary doesn't maintain the order in which items are added to it, but a list does. A tuple also maintains the order of items but it's items cannot be modified. 
 
 Examples of what you can do with dictionaries can be found in [17_dictionaries.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/17_dictionaries.py).
+
+## Sets
+
+Sets are collections of unique objects. In Python, you can create a new set with `my_set = set()`, add to it with `my_set.add(item)`, and remove items from it with `my_set.remove(item)`.
+
+One important note about sets is that they are not ordered, so iterating through a set is not guaranteed to give you the same result every time.
+
+If you only care if something exists, use a set.
+
+## Exceptions
+
+An **exception**, in Python, is **raised** when something unexpected happens during the execution of your program. For instance, if you try to convert the string `"hello"` into an **integer**, your program will raise a `ValueError`.
+
+If you anticipate that a part of your code might, in some cases, raise an exception, you can surround that part of the code with a `try/except` block and prevent your program from completely crashing.
+
+```
+try:
+    i = int("hello")
+except Exception as e:
+    print(f"Caught the exception: {e}")
+```
+
+A `try` block without an `except` or `finally` block is pretty useless, so an `except` or `finally` is indeed required.
+
+You can have as many `except` blocks as you want, and you can do whatever you want in them.
+
+However, you can only have one `finally` block, and it's not required if you have at least one `except` before it.
+
+Python is an interpreted language, which means that all exceptions other than syntax errors occur at run-time, while the program is being executed.
+
+For example, if you try executing `[0, 1, 2][3]` in Python, the code will indeed be executed, and the resulting `IndexError` will be raised at run-time.
+
+If syntax errors are present, however, the interpreter will catch them before executing the program and inform you that it can't understand the code that you've written.
+
+For example, if you try executing `[]]` in Python, the code won't be executed, and a `SyntaxError` will instead be raised.
