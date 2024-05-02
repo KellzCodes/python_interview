@@ -393,3 +393,162 @@ In Python, a **mutable** object is one that can be modified once created. The fo
 - `dict`
 
 Examples on mutability are found in [21_mutability.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/21_mutability.py).
+
+## Scope
+
+A variable is only available from inside the region it is created. This is called **scope**.
+
+**Local Scope**
+
+A variable created inside a function belongs to the *local* scope of that function, and can only be used inside that function.
+
+```
+def myfunc():
+  x = 300
+  print(x)
+
+myfunc() # this outputs to 300
+```
+
+**Function Inside Function**
+
+As explained in the example above, the variable `x` is not available outside the function, but it is available for any function inside the function:
+
+```
+def myfunc():
+  x = 300
+  def myinnerfunc():
+    print(x)
+  myinnerfunc()
+
+myfunc() # this outputs to 300
+```
+
+**Global Scope**
+
+A variable created in the main body of the Python code is a global variable and belongs to the global scope.
+
+Global variables are available from within any scope, global and local.
+
+```
+x = 300
+
+def myfunc():
+  print(x)
+
+myfunc() # this outputs to 300
+
+print(x) # this outputs to 300
+```
+
+**Naming Variables**
+
+If you operate with the same variable name inside and outside of a function, Python will treat them as two separate variables, one available in the global scope (outside the function) and one available in the local scope (inside the function).
+
+The function will print the local x, and then the code will print the global x: 
+```
+x = 300
+
+def myfunc():
+  x = 200
+  print(x) 
+
+myfunc() # this outputs to 200
+
+print(x) # this outputs to 300
+```
+
+**Block Scope**
+
+In **block scope**, variables are only available within the blocks where they are declared, including any other blocks nested within that block. Also, variables can only be accessed by code executed after the variable is initially declared or given a value.
+
+```
+# Global block
+x = int(input("Enter a number: "))
+if x > 5:
+    # block A
+    y = int(input("Enter a number: "))
+    if y > 10: 
+        # block B
+        z = 10
+    else:
+        # block C
+        z = 5
+elif x < 0:
+    # block D
+    a = -5
+else:
+    # block E
+    b = 0
+print("?")
+```
+
+**Global Keyword**
+
+If you need to create a global variable, but are stuck in the local scope, you can use the `global` keyword.
+
+The `global` keyword makes the variable global.
+
+```
+def myfunc():
+  global x
+  x = 300
+
+myfunc()
+
+print(x) # this ouputs to 300
+```
+
+Also, use the `global` keyword if you want to make a change to a global variable inside a function.
+
+```
+x = 300
+
+def myfunc():
+  global x
+  x = 200
+
+myfunc()
+
+print(x) # this outputs to 200
+```
+
+The `global` keyword is typically considered bad practice and should be avoided. 
+
+The reason for this is that the `global` keyword adds side-effects to a function and makes it dependent on something referenced outside the function scope. This means changes to the globally referenced object can change the behaviour of the function and be difficult to detect, especially if a bug or issue arises. 
+
+In summary, the `global` keyword often introduces unnecessary complexity and can almost always be avoided.
+
+**Nonlocal Keyword**
+
+The nonlocal keyword is used to work with variables inside nested functions.
+
+The nonlocal keyword makes the variable belong to the outer function.
+
+```
+def myfunc1():
+  x = "Jane"
+  def myfunc2():
+    nonlocal x
+    x = "hello"
+  myfunc2()
+  return x
+
+print(myfunc1()) # this outputs to hello
+```
+
+## Math
+
+**Standard Library**
+
+The **standard library** of a language are the libraries that the language comes with by default. In Python, this includes modules like `os`, `math`, `threading`, and so many more. 
+
+**math Module**
+
+The **math** module is part of the Python **standard library**, and gives you many nice functions that you may need to use in real world programs. For instance, `math.sin(x)`, `math.cos(x)`, `math.tan(x)`, and `math.pi` are available from the `math` module.
+
+**random Module**
+
+The **random** module is part of the Python **standard library**, and provides many functions that you can use to generate random numbers or make random choices. `random.randint(start,stop)`, `random.randrange(start, stop, step)`, and `random.choice(iterable)` are a few commonly used functions from the `random` module.
+
+Examples of what you can do with math and random can be found in [23_math.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/23_math.py).
