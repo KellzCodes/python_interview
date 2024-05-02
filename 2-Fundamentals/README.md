@@ -58,7 +58,6 @@ An example of variables and printing can be found in [4_variablesAndPrinting.py]
 
 ## Console Input
 
-**Input**
 - The input function is built directly into Python as a means to gather user input from the command line. 
 - An important note is that it will always return a `str` object which will need to be converted to an `int` (for example) if you expect the user input to be an integer. 
 
@@ -146,7 +145,6 @@ After converting to float : 10010.0
 
 ## Conditions
 
-**Condition**
 - A **condition** is any expression that evaluates to `True` or `False`. 
 - The expression `2 == 2` evaluates to `True` and is considered a condition.
 
@@ -208,7 +206,6 @@ else:
 
 ## Lists
 
-**List**
 - In Python, a **list** is a data type that stores an ordered collection of elements.
 - You can access individual elements in a list using their indices and add elements to a list by using the `.append(item)` method
 
@@ -254,7 +251,6 @@ Examples of what you can do with strings can be found in [12_strings.py](https:/
 
 ## Tuples
 
-**Tuple**
 - A **tuple** is similar to a list in that it stores a collection of elements. 
 - Like lists, you can access individual elements in a tuple using their indices, but you cannot modify or change these elements. 
 
@@ -367,3 +363,33 @@ For example, if you try executing `[0, 1, 2][3]` in Python, the code will indeed
 If syntax errors are present, however, the interpreter will catch them before executing the program and inform you that it can't understand the code that you've written.
 
 For example, if you try executing `[]]` in Python, the code won't be executed, and a `SyntaxError` will instead be raised.
+
+Examples of what you can do with exceptions can be found in [19_exceptions.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/19_exceptions.py).
+
+## Functions
+
+**Argument & Parameter**
+
+The terms **argument** and **parameter** are frequently used interchangeably. However, strictly speaking, **arguments** are values that are passed into a function, while **parameters** are values that are read by that function.
+
+Examples of what you can do with functions can be found in [20_functions.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/20_functions.py).
+
+## Mutability
+
+**Immutable**
+
+In Python, an **immutable** object is one that cannot be modified once created. The following are examples of immutable data types:
+- `int`
+- `float`
+- `str`
+- `bool`
+- `tuple`
+
+**Mutable**
+
+In Python, a **mutable** object is one that can be modified once created. The following are examples of mutable data types:
+- `list`
+- `set`
+- `dict`
+
+Examples on mutability are found in [21_mutability.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/21_mutability.py).
