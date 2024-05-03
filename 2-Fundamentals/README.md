@@ -552,3 +552,13 @@ The **math** module is part of the Python **standard library**, and gives you ma
 The **random** module is part of the Python **standard library**, and provides many functions that you can use to generate random numbers or make random choices. `random.randint(start,stop)`, `random.randrange(start, stop, step)`, and `random.choice(iterable)` are a few commonly used functions from the `random` module.
 
 Examples of what you can do with math and random can be found in [23_math.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/23_math.py).
+
+## Sorting
+
+Python lists have a built-in `.sort()` method that modifies the list in-place. There is also a `sorted()` built-in function that builds a new sorted list from an iterable.
+
+Examples of what you can do with sorting can be found in [24_sorting.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/24_sorting.py).
+
+## Misc. Python Syntax
+
+Examples of miscellaneous Python syntax can be found in [25_misc_syntax.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/25_misc_syntax.py).
