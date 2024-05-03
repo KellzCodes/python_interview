@@ -1,4 +1,30 @@
-# Introduction
+# Fundamentals
+
+### Contents
+- [Data Types](#data-types)
+- [Comments](#comments)
+- [Variables and Printing](#variables-and-printing)
+- [Console Input](#console-input)
+- [Arithmetic Operators](#arithmetic-operators)
+- [Type Conversions](#type-conversions)
+- [Conditions](#conditions)
+- [Compound Conditions](#compound-conditions)
+- [Conditionals](#conditionals)
+- [Lists](#lists)
+- [Strings](#strings)
+- [Tuples](#tuples)
+- [For Loops](#for-loops)
+- [While Loops](#while-loops)
+- [Slices](#slices)
+- [Dictionary](#dictionary)
+- [Sets](#sets)
+- [Exceptions](#exceptions)
+- [Functions](#functions)
+- [Mutability](#mutability)
+- [Scope](#scope)
+- [Math](#math)
+- [Sorting](#sorting)
+- [Misc. Python Syntax](#misc-python-syntax)
 
 To start using Python you need to download it, which you can do [here](https://www.python.org/)
 
