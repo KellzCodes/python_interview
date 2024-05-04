@@ -25,6 +25,7 @@
 - [Math](#math)
 - [Sorting](#sorting)
 - [Misc. Python Syntax](#misc-python-syntax)
+- [Programming Fundamentals Assessments](#programming-fundamentals-assessments)
 
 To start using Python you need to download it, which you can do [here](https://www.python.org/)
 
@@ -588,3 +589,53 @@ Examples of what you can do with sorting can be found in [24_sorting.py](https:/
 ## Misc. Python Syntax
 
 Examples of miscellaneous Python syntax can be found in [25_misc_syntax.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/25_misc_syntax.py).
+
+## Programming Fundamentals Assessments
+
+### Random Number Guesser
+Write a program that asks the user to enter two integers representing the start and end of a range. The program should then generate a random number within this range (inclusively) and ask the user to guess numbers until they guess the randomly generated number. Once the user guesses the random number, the program should tell them how many attempts it took them to guess it.
+
+Your program needs to ensure that the range of numbers given is valid. For example, if the user enters a number for the end of the range that is less than the start of the range, your program needs to ask them to enter a valid number. Your program must also handle any other errors that might occur, like the user entering a string instead of an integer.
+
+Note: You may assume the start of the range will never be negative (i.e. you don't need to handle negative values).
+
+Your program must use the same prompts and outputs as shown in the sample output below:
+
+**Sample Output 1**
+```
+Enter the start of the range: 1
+Enter the end of the range: 5
+Guess a number: 2
+Guess a number: 3
+You guessed the number in 2 attempts
+```
+
+**Sample Output 2**
+```
+Enter the start of the range: 5
+Enter the end of the range: 4
+Please enter a valid number.
+Enter the end of the range: 7
+Guess a number: 6
+You guessed the number in 1 attempt
+```
+
+**Sample Output 3**
+```
+Enter the start of the range: hello
+Please enter a valid number.
+Enter the start of the range: 8
+Enter the end of the range: 4
+Please enter a valid number.
+Enter the end of the range: 20
+Guess a number: 6
+Guess a number: 7
+Guess a number: hello
+Please enter a valid number.
+Guess a number: 9
+You guessed the number in 3 attempts
+```
+
+Solution 1 can be found in [random_number_guesser_1.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/random_number_guesser_1.py).
+
+Solution 2 can be found in [random_number_guesser_2.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/random_number_guesser_2.py).

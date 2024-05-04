@@ -32,28 +32,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.11_lists.executor": "Run",
-    "Python.12_strings.executor": "Run",
-    "Python.15_while_loops.executor": "Run",
-    "Python.17_dictionaries.executor": "Run",
-    "Python.20_functions.executor": "Run",
-    "Python.21_mutability.executor": "Run",
-    "Python.4_variablesAndPrinting.executor": "Run",
-    "Python.6_arithmetic_operators.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.11_lists.executor&quot;: &quot;Run&quot;,
+    &quot;Python.12_strings.executor&quot;: &quot;Run&quot;,
+    &quot;Python.15_while_loops.executor&quot;: &quot;Run&quot;,
+    &quot;Python.17_dictionaries.executor&quot;: &quot;Run&quot;,
+    &quot;Python.20_functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.21_mutability.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4_variablesAndPrinting.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6_arithmetic_operators.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.21_mutability">
     <configuration name="12_strings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
@@ -227,7 +227,8 @@
       <workItem from="1714505952467" duration="1483000" />
       <workItem from="1714507461303" duration="12231000" />
       <workItem from="1714594295720" duration="12081000" />
-      <workItem from="1714682048484" duration="9325000" />
+      <workItem from="1714682048484" duration="10408000" />
+      <workItem from="1714776487276" duration="4670000" />
     </task>
     <servers />
   </component>
