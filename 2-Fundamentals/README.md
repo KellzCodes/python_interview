@@ -671,7 +671,7 @@ Solution 1 can be found in [random_number_guesser_1.py](https://github.com/Kellz
 
 Solution 2 can be found in [random_number_guesser_2.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/random_number_guesser_2.py).
 
-### Caesar Cipher
+### Caesar Cypher
 
 Write a function that accepts a string and returns the caesar cipher encoding of that string according to a secondary input parameter named `offset`.
 
@@ -706,3 +706,86 @@ offset = 5
 Solution 1 can be found in [caesar_cypher_1.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/caesar_cypher_1.py).
 
 Solution 2 can be found in [caesar_cypher_2.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/caesar_cypher_2.py).
+
+### Sort Employees
+
+Write a function that accepts a list of lists that contain the name, age, and salary of specific employees and also accepts a string representing the key to sort employees by. Your function should return a new list that contains the lists representing each employee sorted in ascending order by the given key.
+
+The string parameter named `sort_by` will always be equal to one of the following values: `"name"`, `"age"`, or `"salary"`.
+
+See the sample input and output below for a detailed example.
+
+**Sample Input #1**
+```
+employees = [
+    ["John", 33, 65000],
+    ["Sarah", 24, 75000],
+    ["Josie", 29, 100000],
+    ["Jason", 26, 55000],
+    ["Connor", 25, 110000]
+]
+sort_by = "age"
+```
+
+**Sample Output #1**
+```
+[
+  ['Sarah', 24, 75000], 
+  ['Connor', 25, 110000], 
+  ['Jason', 26, 55000], 
+  ['Josie', 29, 100000], 
+  ['John', 33, 65000]
+]
+```
+
+**Sample Input #2**
+```
+employees = [
+    ["John", 33, 65000],
+    ["Sarah", 24, 75000],
+    ["Josie", 29, 100000],
+    ["Jason", 26, 55000],
+    ["Connor", 25, 110000]
+]
+sort_by = "salary"
+```
+
+**Sample Output #2**
+```
+[
+  ['Jason', 26, 55000], 
+  ['John', 33, 65000], 
+  ['Sarah', 24, 75000], 
+  ['Josie', 29, 100000], 
+  ['Connor', 25, 110000]
+]
+```
+
+**Sample Input #3**
+```
+employees = [
+    ["John", 33, 65000],
+    ["Sarah", 24, 75000],
+    ["Josie", 29, 100000],
+    ["Jason", 26, 55000],
+    ["Connor", 25, 110000]
+]
+sort_by = "name"
+```
+
+**Sample Output #3**
+```
+[
+  ['Connor', 25, 110000], 
+  ['Jason', 26, 55000], 
+  ['John', 33, 65000], 
+  ['Josie', 29, 100000], 
+  ['Sarah', 24, 75000]
+]
+```
+
+Solution 1 can be found in [sort_employees_1.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/sort_employees_1.py).
+
+Solution 2 can be found in [sort_employees_2.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/sort_employees_2.py).
+
+Solution 3 is an advanced solution not covered yet. It can be found in [sort_employees_3.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/sort_employees_3.py).
