@@ -1,5 +1,7 @@
 # Fundamentals
 
+To start using Python you need to download it, which you can do [here](https://www.python.org/).
+
 ### Contents
 - [Data Types](#data-types)
 - [Comments](#comments)
@@ -26,8 +28,6 @@
 - [Sorting](#sorting)
 - [Misc. Python Syntax](#misc-python-syntax)
 - [Programming Fundamentals Assessments](#programming-fundamentals-assessments)
-
-To start using Python you need to download it, which you can do [here](https://www.python.org/)
 
 ## VSCode
 
@@ -789,3 +789,120 @@ Solution 1 can be found in [sort_employees_1.py](https://github.com/KellzCodes/p
 Solution 2 can be found in [sort_employees_2.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/sort_employees_2.py).
 
 Solution 3 is an advanced solution not covered yet. It can be found in [sort_employees_3.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/sort_employees_3.py).
+
+### Longest Unique Words
+
+Write a function that accepts a list of strings that represent words and a positive integer `n`, representing the number of words to return. Your function should return a new list containing the `n` longest unique words from the input list. Words are unique if they only appear one time in the input list.
+
+There will always be exactly `n` words to return and you may return the words in any order.
+
+Note: all strings in the input list will not contain any special characters or spaces.
+
+See the sample input and output below for a detailed example.
+
+**Sample Input #1**
+```
+[
+  "Longer",
+  "Whatever",
+  "Longer",
+  "Ball",
+  "Rock",
+  "Rocky",
+  "Rocky"
+]
+```
+
+**Sample Output #1
+```
+[
+  "Whatever",
+  "Ball",
+  "Rock"
+]
+```
+
+Solution 1 can be found in [longest_unique_words_1.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/longest_unique_words_1.py).
+
+Solution 2 can be found in [longest_unique_words_2.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/longest_unique_words_2.py).
+
+Solution 3 can be found in [longest_unique_words_3.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/longest_unique_words_3.py).
+
+### Pairs Sum To Target
+
+Write a function that accepts two lists(`list1` and `list2`) of integers and a target integer named `target`. Your function should return all pairs of indices in the form `[x, y]` where `list1[x] + list2[y] == target`. In other words, return the pairs of indices where the sum of their values equals `target`.
+
+`list1` and `list2` will always have the same number of elements and you may return the pairs in any order.
+
+**Sample Input #1**
+```
+list1 = [1, -2, 4, 5, 9]
+list2 = [4, 2, -4, -4, 0]
+target = 5
+```
+
+**Sample Output #1**
+```
+[
+  [0, 0], # list1[0] = 1, list2[0] = 4, 1 + 4 = 5
+  [3, 4], # list1[3] = 5, list2[4] = 0, 5 + 0 = 5
+  [4, 2], # list1[4] = 9, list2[2] = -4, 9 + -4 = 5
+  [4, 3], # list1[4] = 9, list2[3] = -4, 9 + -4 = 5
+]
+```
+
+Solution 1 can be found in [pairs_sum_to_target_1.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/pairs_sum_to_target_1.py).
+
+Solution 2 can be found in [pairs_sum_to_target_2.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/pairs_sum_to_target_2.py).
+
+### Create Strings From Characters
+
+Write a function that accepts a dictionary called `frequencies` and two strings named `string1` and `string2`. The `frequencies` dictionary contains character keys and integer values, the value associated with each character represents its frequency. Your function should return `0`, `1`, or `2` according to the cases below.
+- Your function should return `2` if the frequency of characters in the dictionary is sufficient to create both `string1` and `string2` without reusing any characters.
+- Your function should return `1` if the frequency of characters in the dictionary is sufficient to create either `string1` or `string2` without reusing any characters.
+- Your function should return `0` if the frequency of characters in the dictionary is **not** sufficient to create either `string1` or `string2` without reusing any characters.
+
+**Sample Input #1**
+```
+frequencies = {
+    "h": 2,
+    "e": 1,
+    "l": 1,
+    "r": 4,
+    "a": 3,
+    "o": 2, 
+    "d": 2,
+    "w": 1
+}
+string1 = "hello"
+string2 = "world"
+```
+
+**Sample Output #1**
+```
+1 # the string "world" can be created but "hello" cannot be.
+```
+
+**Sample Input #2**
+```
+frequencies = {
+    "h": 2,
+    "e": 1,
+    "l": 2,
+    "r": 4,
+    "a": 3,
+    "o": 2, 
+    "d": 1,
+    "w": 1
+}
+string1 = "hello"
+string2 = "world"
+```
+
+**Sample Output #2**
+```
+1 # The string "world" and "hello" can be created but they cannot both be created without resusing any characters.
+  # This is because there is not enough "l"'s.
+```
+
+The solution can be found in [create_strings_from_characters.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/create_strings_from_characters.py).
