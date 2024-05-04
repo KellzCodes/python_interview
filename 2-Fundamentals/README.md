@@ -274,6 +274,37 @@ world
 !
 ```
 
+**Python String Module**
+
+The **string module** is a built in module which has to be imported before using any of its contants and classes
+
+Here are some constants defined in the string module:
+```
+import string
+
+# string module constants
+print(string.ascii_letters)
+print(string.ascii_lowercase)
+print(string.ascii_uppercase)
+print(string.digits)
+print(string.hexdigits)
+print(string.whitespace)
+print(string.punctuation)
+```
+
+Output:
+
+```
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+0123456789
+0123456789abcdefABCDEF
+ 	
+
+!"#$%&'()*+,-./:;?@[\]^_`{|}~
+```
+
 Examples of what you can do with strings can be found in [12_strings.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/12_strings.py).
 
 ## Tuples
@@ -639,3 +670,17 @@ You guessed the number in 3 attempts
 Solution 1 can be found in [random_number_guesser_1.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/random_number_guesser_1.py).
 
 Solution 2 can be found in [random_number_guesser_2.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/random_number_guesser_2.py).
+
+### Caesar Cipher
+
+Write a function that accepts a string and returns the caesar cipher encoding of that string according to a secondary input parameter named `offset`.
+
+The caesar cipher encoding of a string involves shifting each character in the string a set number of positions previous in the alphabet. For example, if you were performing a caesar cipher of the string `"kelli"` with `offset = 2`, you would get `icjjg`. `"k"` is shifted to positions to `"i"`, `"e"` is shifted two positions to `"c"`, `"l"` is shifted two positions to `"j"`, `"i"` is shifted two positions to `"g"`.
+
+In the situation where the shift of a character results in it being a position before `"a"`, the positions wrap and the next character should be `"z"`. For example, the caesar cipher of `"ab"` with `offset = 2` would be `"yz"`.
+
+`offset` will always be a positive integer that is no greater than `26` and the input string will only contain lowercase letters.
+
+Solution 1 can be found in [caesar_cypher_1.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/caesar_cypher_1.py).
+
+Solution 2 can be found in [caesar_cypher_2.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/caesar_cypher_2.py).
