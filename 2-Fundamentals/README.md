@@ -681,6 +681,28 @@ In the situation where the shift of a character results in it being a position b
 
 `offset` will always be a positive integer that is no greater than `26` and the input string will only contain lowercase letters.
 
+**Sample Input #1**
+```
+string = "hello"
+offset = 3
+```
+
+**Sample Output #1**
+```
+"ebiil"
+```
+
+**Sample Input #2**
+```
+string = "apple"
+offset = 5
+```
+
+**Sample Output #2**
+```
+"vkkgz"
+```
+
 Solution 1 can be found in [caesar_cypher_1.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/caesar_cypher_1.py).
 
 Solution 2 can be found in [caesar_cypher_2.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/caesar_cypher_2.py).
