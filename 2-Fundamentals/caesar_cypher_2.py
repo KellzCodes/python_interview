@@ -1,4 +1,4 @@
-def caesar_cipher(string, offset):
+def caesar_cypher(string, offset):
     # Define the alphabet as a list of characters in order
     alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
                 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
