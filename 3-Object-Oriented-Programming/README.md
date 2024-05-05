@@ -26,7 +26,7 @@ For example, `"str".count("s")`, `[1, 2, 1].sort()` and `"str".upper()` are all 
 
 **Attribute**
 
-An **attribute is an **object** that belongs to either a class, or to an instance of that class. Attributes of an object can be referenced using the `.` notation: `print(person.name)`.
+An **attribute** is an **object** that belongs to either a class, or to an instance of that class. Attributes of an object can be referenced using the `.` notation: `print(person.name)`.
 
 **Class attributes** are attributes that are shared by all instances of that class, while **instance attributes** may have a different value for each and every instance that was created.
 
