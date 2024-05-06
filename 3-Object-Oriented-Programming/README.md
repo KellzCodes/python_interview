@@ -51,3 +51,37 @@ An **instance** of a class is an object created from that class's "blueprint". F
 Encapsulation, in **Object-Oriented Programming**, refers to how a programmer might prevent outside access to the details of a class in order to simiplify the way the class might be used, or to make it harder to misuse the functionality that is exposed through certain methods or properties.
 
 According to PEP-8 (the style guide for Python) the proper casing for class names is **PascalCase**. Note that this is also commonly referred to as **CapitalCamelCase**.
+
+Examples of what you can do with classes can be found in [02_creating_classes.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/02_creating_classes.py).
+
+## Methods
+
+A **method** is a function defined inside a **class** definition. There are three important kinds of methods: **instance methods**, **class methods**, and **static methods**.
+
+Examples of what you can do with methods can be found in [03_methods.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/03_methods.py).
+
+## Properties
+
+In Python, all attributes of an object are public. This means they can be accessed from outside the class they are defined in.
+
+In Python, since there is no access modifiers (private, public or protected keywords) to denote an attribute as private you prefix it with a `_`. The attribute can still be accessed and modified like all other attributes but the `_` prefix denotes that it should not be, this is a Python convention.
+
+In object-oriented programming, getters are used to return the value of attributes while setters are used to set the value of attributes. Both allow you to hide complexity by providing a single method that can be used to validate data before assigning it to an attribute (setter) or mutate data (e.g. rounding a number) before returning it (getter). Setters may also constrain an attribute value by only allowing you to set it to something considered valid by the class (e.g. you can't set a negative salary for an employee).
+
+In Python, there is a built-in function for declaring the properties of the program class, which is known as the `property()` function. Python `property()` built-in function and `@property` decorator is provided to easily implement the getters and setters methods in Object-Oriented Programming.
+
+Examples of what you can do with properties can be found in [04_properties.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/04_properties.py).
+
+## Class Methods And Attributes
+
+**Class Attribute**
+
+An **attribute** is an **object** that belongs either to a class, or to an instance of that class. Attributes of an object can be referenced using the `.` notation: `print(person.name)`.
+
+A **class attribute** is an attribute that is associated with a class but not with an instance of a class. Class attributes can be modified and accessed by using the class name directly or by using an instance of the class. Typically class attributes are defined at the top of the class, inside the class body.
+
+**Class Method**
+
+A **class method** is a method that has a mandatory `cls` parameter and can only access class attributes and other class methods. It does not act on an instance of a class, but on the class itself. Class methods are denoted with the `@classmethod` decorator.
+
+Examples of what you can do with class methods and attributes can be found in [05_class_methods_and_attributes.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/05_class_methods_and_attributes.py).
