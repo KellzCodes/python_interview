@@ -52,3 +52,70 @@ p = Person2('David')
 print(p.name)  # Getting name... David
 p.name = 'Rocky'  # Setting name to: Rocky
 del p.name  # Deleting name...
+
+'''
+BankAccount Class:
+
+class BankAccount:
+    def __init__(self, account_holder_name):
+        self.account_holder_name = account_holder_name
+
+Complete the "BankAccount" class by adding a private attribute named "balance" and implementing a getter and setter 
+for it. For this question DO NOT USE THE "@property" decorator. 
+If any of the listed constraints are broken, your method should not update the balance.
+    - The "balance" must always be at least 0
+    - The "balance" may not exceed 100,000
+    - The "balance" must be a number
+    - When the "balance" is retrieved, it is always rounded to the nearest dollar.
+'''
+class BankAccount:
+    def __init__(self, account_holder_name):
+        self.account_holder_name = account_holder_name
+        self._balance = 0
+
+    def get_balance(self):
+        return round(self._balance)
+
+    def set_balance(self, balance):
+        if type(balance) not in [int, float]:
+            return
+
+        if balance < 0 or balance >= 100000:
+            return
+
+        self._balance = balance
+
+
+'''
+BankAccount Class:
+
+class BankAccount:
+    def __init__(self, account_holder_name):
+        self.account_holder_name = account_holder_name
+
+Complete the "BankAccount" class by adding a private attribute named "balance" and implementing a getter and setter 
+for it. For this question YOU SHOULD USE THE "@property" decorator. 
+If any of the listed constraints are broken, your method should not update the balance.
+    - The "balance" must always be at least 0
+    - The "balance" may not exceed 100,000
+    - The "balance" must be a number
+    - When the "balance" is retrieved, it is always rounded to the nearest dollar.
+'''
+class BankAccount2:
+    def __init__(self, account_holder_name):
+        self.account_holder_name = account_holder_name
+        self._balance = 0
+
+    @property
+    def balance(self):
+        return round(self._balance)
+
+    @balance.setter
+    def balance(self, balance):
+        if type(balance) not in [int, float]:
+            return
+
+        if balance < 0 or balance >= 100000:
+            return
+
+        self._balance = balance
