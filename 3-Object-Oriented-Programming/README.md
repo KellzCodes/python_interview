@@ -85,3 +85,29 @@ A **class attribute** is an attribute that is associated with a class but not wi
 A **class method** is a method that has a mandatory `cls` parameter and can only access class attributes and other class methods. It does not act on an instance of a class, but on the class itself. Class methods are denoted with the `@classmethod` decorator.
 
 Examples of what you can do with class methods and attributes can be found in [05_class_methods_and_attributes.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/05_class_methods_and_attributes.py).
+
+## Static Methods
+
+A **static method** is defined within a class but should not reference anything relevant to that class specifically, except for other static methods. 
+
+For the most part, static methods should only be used for **pure** functions, which do not use temporary variables outside of their own scope and exclusively transform a set of inputs into some outputs. For instance, a method that converts a distance from kilometers to miles should most like be **static**. Static methods are denoted using the `@staticmethod` decorator.
+
+Examples of what you can do with static methods can be found in [06_static_methods.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/06_static_methods.py).
+
+## Inheritance
+
+**Child Class**
+
+When a class `A` inherits from class `B`, we say that class `A` is a **child class** of `B`.
+
+**Parent Class**
+
+When a class `A` inherits from class `B`, we say that class `B` is a **parent class** of `A`.
+
+**Polymorphism**
+
+**Polymorphism** is a term originating from biology, where poly means many and morphism means forms (this is a simplification). In programming, polymorphism refers to the ability for an object to behave in different ways and exhibit different behavior based on the context it's used in.
+
+**Method Overriding**
+
+Method **overriding** is when a programmer re-defines a method on a class that was already defined in its **parent class(es)**.
