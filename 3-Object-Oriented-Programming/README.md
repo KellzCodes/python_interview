@@ -1,5 +1,16 @@
 # Object-Oriented Programming
 
+### Contents
+- [Creating Classes](#creating-classes)
+- [Methods](#methods)
+- [Properties](#properties)
+- [Class Methods and Attributes](#class-methods-and-attributes)
+- [Static Methods](#static-methods)
+- [Inheritance](#inheritance)
+- [Abstract Classes](#abstract-classes)
+- [Interfaces](#interfaces)
+- [Operator Overloading](#operator-overloading)
+
 Programming languages are often classified based on their syntax, features, and execution models. This course introduces you to the idea of programming paradigms and gives you an in-depth look into one of the most popular ways to think about and organize your programs.
 
 **Object** 
@@ -100,9 +111,13 @@ Examples of what you can do with static methods can be found in [06_static_metho
 
 When a class `A` inherits from class `B`, we say that class `A` is a **child class** of `B`.
 
+Child class, subclass and derived class are all synonymous for a class that inherits from another class.
+
 **Parent Class**
 
 When a class `A` inherits from class `B`, we say that class `B` is a **parent class** of `A`.
+
+Parent class, superclass and base class are all synonymous for a class that is inherited from.
 
 **Polymorphism**
 
@@ -111,3 +126,35 @@ When a class `A` inherits from class `B`, we say that class `B` is a **parent cl
 **Method Overriding**
 
 Method **overriding** is when a programmer re-defines a method on a class that was already defined in its **parent class(es)**.
+
+Inheritance examples are found in [07_inheritance.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/07_inheritance.py).
+
+## Abstract Classes
+
+An **abstract method** is a method that is defined in an interface or abstract class and does not provide an implementation. Abstract methods are designed to be overridden by base or subclasses that extend the class or implement the interface they're defined in.
+
+An **abstract class** is a class that contains at least one abstract method and is not meant to be instantiated. Abstract classes are meant to act as the parent or base class in an inheritance hierarchy. Typically abstract classes implement some functionality that can be used commonly by all child or subclasses.
+
+All method types are allowed in an abstract class. Abstract classes usually contain some concrete methods (ones that provide an implementation) while also defining abstract methods that must be implemented by child classes that inherits from it.
+
+In many other programming languages it is enforced that a subclass of an abstract class must implement any abstract methods it contains. However, in Python this behavior is not enforced and although it is conventional for subclasses of an abstract class to do so it is not required.
+
+Abstract class examples are found in [08_abstract_classes.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/08_abstract_classes.py).
+
+## Interfaces
+
+In Python, there is no formal definition for an **interface**, but we can still represent one by creating a class that only defines abstract methods. An interface is designed to be used as an abstract data type that enforces that classes that implement it define specific methods and behavior.
+
+Interfaces, like abstract classes, should not be instantiated. There are meant to act as an abstract data type that classes will implement.
+
+Unlike abstract classes the only methods allowed in an interface are abstract. An interface does not provide any concrete methods or behavior.
+
+Interface examples can be found in [09_interfaces.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/09_interfaces.py).
+
+## Operator Overloading
+
+**Dunder Methods** are methods that are prefixed and suffixed by two underscores. The most important to know is the `__init__` dunder method, which is sometimes called the `constructor` of the class, and defines how a new instance is initialized after being created.
+
+Implementing those methods will sometimes change how certain operators will behave (like `+` with `__add__` and `==` with `__eq__`). Other examples include `__len__`, `__str__`, `__repr__` and many more.
+
+Operator Overloading examples can be found in [10_operator_overloading.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/10_operator_overloading.py).
