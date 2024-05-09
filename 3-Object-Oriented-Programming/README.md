@@ -158,3 +158,19 @@ Interface examples can be found in [09_interfaces.py](https://github.com/KellzCo
 Implementing those methods will sometimes change how certain operators will behave (like `+` with `__add__` and `==` with `__eq__`). Other examples include `__len__`, `__str__`, `__repr__` and many more.
 
 Operator Overloading examples can be found in [10_operator_overloading.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/10_operator_overloading.py).
+
+# Programming Assessments
+
+## Inventory Class
+
+Write an `Inventory` class, as defined below, that handles the management of inventory for a company. All instances of this class should be initialized by passing an integer value named `max_capacity` that indicates the maximum number of items that can be stored in inventory. Your `Inventory` class will need to store items that are represented by a `name`, `price`, and `quantity`.
+
+Your class should implement the following methods.
+- `add_item(name, price, quantity)`: This method should add an item to inventory and return `True` if it was successfully added. If adding an item results in the inventory being over capacity, your method should return `False` and omit adding this item to the inventory. Additionally, if an item with the passed `name` already exists in inventory, this method should return `False` to indicate the item could not be added.
+- `delete_item(name)`: This method should delete an item and return `True` if the item was successfully deleted. If there is no item with the passed `name`, this method should return `False`.
+- `get_most_stocked_item()`: This method should return the name of the item that has the highest quantity in the inventory, and return `None` if there are no items in the inventory. You may assume there will always be exactly one item with the largest quantity, except for the case where the inventory is empty.
+- `get_items_in_price_range(min_price, max_price)`: This method should return a list of the names of items that have a price within the specified range (inclusively).
+
+Note: you may assume all input/arguments to your class will be valid and the correct types. For example, the `max_capacity` will always be greater thatn or equal to `0` and a valid integer.
+
+The solution can be found in [Inventory.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/Inventory.py).
