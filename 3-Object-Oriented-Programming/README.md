@@ -174,3 +174,18 @@ Your class should implement the following methods.
 Note: you may assume all input/arguments to your class will be valid and the correct types. For example, the `max_capacity` will always be greater thatn or equal to `0` and a valid integer.
 
 The solution can be found in [Inventory.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/Inventory.py).
+
+## Student Class
+
+Write a `Student` class, as defined below, that keeps track of all created students.
+
+Your class should implement the following methods, class variables and properties:
+
+- An instance attribute called `name`.
+- A property called `grade` that returns the grade of that student. Trying to set the grade should raise a `ValueError` if the new grade is not a number between `0` and `100`.
+- A static method called `calculate_average_grade(students)` that accepts a list of `Student` objects and returns the average grade for those students. If there are no students in the list, it should return `-1`.
+- A class variable called `all_students` that stores all of the student objects that have been created in a list.
+- A class method named `get_average_grade()` which returns the average grade of all created students.
+- A class method named `get_best_student()` which returns the student object with the best grade out of all the currently created students. If there are no students created this method should return `None`. You may assume there will always be one student with the best grade, except in the case where there are no students created.
+
+The solution can be found in [Student.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/Student.py).
