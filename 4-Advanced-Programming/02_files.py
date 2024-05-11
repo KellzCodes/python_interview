@@ -93,3 +93,11 @@ empty_strings = words.count("")
 number_of_words = len(words) - empty_strings
 
 print(number_of_words)
+
+'''
+Within the current directory, create a new file named "programmingExpert.txt" that contains the 
+squares of numbers in the range 1 to 50, each on a new line.
+'''
+with open("Downloads/file2.txt", "w") as file:
+    for i in range(1, 51):
+        file.write(str(i * i) + "\n")
