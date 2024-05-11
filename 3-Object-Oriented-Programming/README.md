@@ -10,6 +10,7 @@
 - [Abstract Classes](#abstract-classes)
 - [Interfaces](#interfaces)
 - [Operator Overloading](#operator-overloading)
+- [Programming Assessments](#programming-assessments)
 
 Programming languages are often classified based on their syntax, features, and execution models. This course introduces you to the idea of programming paradigms and gives you an in-depth look into one of the most popular ways to think about and organize your programs.
 
@@ -189,3 +190,171 @@ Your class should implement the following methods, class variables and propertie
 - A class method named `get_best_student()` which returns the student object with the best grade out of all the currently created students. If there are no students created this method should return `None`. You may assume there will always be one student with the best grade, except in the case where there are no students created.
 
 The solution can be found in [Student.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/Student.py).
+
+## Geometry Inheritance
+
+Create 4 classes: `Polygon`, `Triangle`, `Rectangle` and `Square`. The `Triangle` and `Rectangle` class should be subclasses of `Polygon`, and `Square` should be a subclass of `Rectangle`.
+
+Your `Polygon` class should raise a `NotImplementedError` when the `get_area()` and `get_sides()` methods are called. However, it should correctly return the perimeter of the polygon when `get_perimeter()` is called. Treat the `Polygon` class as an abstract class.
+
+Your `Triangle` class should have a constructor that takes in 3 arguments, which will be the lengths of the 3 sides of the triangle. You may assume the sides passed to the constructor will always form a valid triangle.
+
+Your `Rectangle` class should have a constructor that takes in 2 arguments, which will be the width and height of the `Rectangle`.
+
+Your `Square` class should have a constructor that takes in 1 argument, which will be the length of each side of the `Square`.
+
+Your `Triangle` and `Rectangle` classes should both implement the following methods:
+- `get_sides()`: This method returns a list containing the lengths of the sides of the shape.
+- `get_area()`: This method returns the area of the polygon.
+
+Your `Square` class should only have an implementation for its constructor, and rely on the `Rectangle` superclass for implementations of `get_sides()` and `get_area()`.
+
+Note: To calculate the area of a triangle given three side lengths (`x`, `y`, and `z`) you can use the following formula. First calculate the semi perimeter `s` using: `s = (x + y + z) / 2`. Then calculate the area `A` using: `A = math.sqrt(s * (s - x) * (s - y) * (s - z))`.
+
+The solution can be found in [Geometry_Inheritance.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/Geometry_Inheritance.py).
+
+## Deck Class
+
+Create a `Deck` class that represents a deck of `52` playing cards. The `Deck` should maintain which cards are currently in the deck and never contain duplicated cards. Cards should be represented by a string containing their value (`2` - `10`, `J`, `Q`, `K`, `A`) followed by their suit (`D`, `H`, `C`, `S`). For example, the jack of clubs would be represented by `"JC"` and the three of hearts would be represented by `"3H"`.
+
+Your `Deck` class should implement the following methods:
+- `shuffle()`: This method shuffles the cards randomly, in place. You may use the `random.shuffle()` method to help you do this.
+- `deal(n)`: This method removes and returns the last `n` cards from the deck in a list. If the deck does not contain enough cards it returns all the cards in the deck.
+- `sort_by_suit()`: This method sorts the cards by suit, placing all the hearts first, diamonds second, clubs third and spades last. The order within each suit (i.e., the card values) does not matter. This method should sort the cards in place, it does not return anything.
+- `contains(card)`: This method returns `True` if the given card exists in the deck and `False` otherwise.
+- `copy()`: This method returns a new `Deck` object that is a copy of the current deck. Any modifications made to the new `Deck` object should not affect the `Deck` object that was copied.
+- `get_cards()`: This method returns all the cards in the deck in a list. Any modifications to the returned list should not change the `Deck` object.
+- `__len__()`: This method returns the number of the cards in the `Deck`.
+
+Your deck should always start with exactly 52 cards that are distributed across 4 suits and 13 values where there are no duplicate cards.
+
+Solution 1 can be found in [Deck1.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/Deck1.py).
+
+Solution 2 can be found in [Deck2.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/Deck2.py).
+
+## FileSystem Implementation
+
+In this question, you need to implement a very simplistic `FileSystem` class that mimics the way that your own computer's `FileSystem` works. A `FileSystem` starts empty with only a root node which will always be a directory.
+
+A `FileSystem` is a tree-like structure composed of nodes, each of which is either a `File` or `Directory`.
+
+Files are simplest and only have `name` and `contents` as attributes; which correspond to the name of the file and its contents, respectively. Files also have a `write` method, which sets the contents of that file to the argument passed in. Additionally, files override the `__len__` dunder method which returns the number of characters in the contents of that file.
+
+Directories have a `name` and a `children` attribute. `children` is a dictionary that stores the name of its children nodes as keys, and the nodes themselves as the values of that dictionary. Directories also have the `add` and `delete` methods which are used to add or delete nodes from its `children` dictionary.
+
+For your convenience, the `__str__` methods of each class have been overridden so that you may debug your FileSystem more easily.
+
+Your task is to implement the following methods on the `FileSystem` class:
+- `create_directory(path)`: This method should create a `Directory` inside the `FileSystem` at the location specified. For instance, `create_directory("/dir1")` should create a directory as a child of the root of the filesystem called `"dir1"`. Running `create_directory("/dir1/dir2")` should create another directory, `dir2`, inside the one that was just created. If the path is malformed or the operation is impossible, it should raise a `ValueError`.
+- `create_file(path, contents)`: This method should create a new file at the desired path, with the contents passed in. If the operation is impossible, it should raise a `ValueError`.
+- `read_file(path)`: This method should return the contents of the file at the path parameter. If no such file exists, it should raise a `ValueError`.
+- `delete_directory_or_file(path)`: This method should delete the node located at `path`. It should work on files and directories alike, and should raise a `ValueError` if that file does not exist.
+- `size()`: This method should return the number of characters across all files in your filesystem.
+- `_find_bottom_node(node_names)`: This is a private helper method of the `FileSystem` class that takes in a list of node names and should traverse the filesystem downwards until the last node in the list. For instance, calling this with `["a", "b", "c"]` should first look for a node `a` inside the root node of the filesystem, then for a node `b` inside node `a`, and then return the node `c` which should be a child of node `b`.
+
+Note: for all methods that accept a `path` parameter you will need to first validate that path and then parse it. The `path` will be a string, and from that string you'll need to do one of the following:
+- Obtain the directory object used to create a new directory or file inside of.
+- Obtain the directory object used to delete a directory or file.
+- Obtain the file object to read the contents of.
+
+This is non-trivial because you may need to distinguish between the name of the new node create and the path where this node should be created.
+
+See Below for the base code:
+
+```
+class FileSystem:
+    def __init__(self):
+        self.root = Directory("/")
+
+    def create_directory(self, path):
+        # Write your code here.
+        pass
+
+    def create_file(self, path, contents):
+        # Write your code here.
+        pass
+
+    def read_file(self, path):
+        # Write your code here.
+        pass
+
+    def delete_directory_or_file(self, path):
+        # Write your code here.
+        pass
+
+    def size(self):
+        # Write your code here.
+        pass
+
+    def __str__(self):
+        return f"*** FileSystem ***\n" + self.root.__str__() + "\n***"
+    
+    @staticmethod
+    def _validate_path(path):
+        if not path.startswith("/"):
+            raise ValueError("Path should start with `/`.")
+
+
+    def _find_bottom_node(self, node_names):
+        # Write your code here.
+        pass
+
+
+class Node:
+    def __init__(self, name):
+        self.name = name
+
+    def __str__(self):
+        return f"{self.name} ({type(self).__name__})"
+
+
+class Directory(Node):
+    def __init__(self, name):
+        super().__init__(name)
+        self.children = {}
+
+    def add_node(self, node):
+        self.children[node.name] = node
+
+    def delete_node(self, name):
+        del self.children[name]
+
+    def __str__(self):
+        string = super().__str__()
+
+        children_strings = []
+        for child in list(self.children.values()):
+            child_string = child.__str__().rstrip()
+            children_strings.append(child_string)
+
+        children_combined_string = indent("\n".join(children_strings), 2)
+        string += "\n" + children_combined_string.rstrip()
+        return string
+
+
+class File(Node):
+    def __init__(self, name):
+        super().__init__(name)
+        self.contents = ""
+
+    def write_contents(self, contents):
+        self.contents = contents
+
+    def __len__(self):
+        return len(self.contents)
+
+    def __str__(self):
+        return super().__str__() + f" | {len(self)} characters"
+
+
+def indent(string, number_of_spaces):
+    spaces = " " * number_of_spaces
+    lines = string.split("\n")
+    indented_lines = [spaces + line for line in lines]
+    return "\n".join(indented_lines)
+
+```
+
+Solution 1 can be found in [FileSystem_Implementation1.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/FileSystem_Implementation1.py).
+
+Solution 2 can be found in [FileSystem_Implementation2.py](https://github.com/KellzCodes/python_interview/blob/main/3-Object-Oriented-Programming/FileSystem_Implementation2.py).
