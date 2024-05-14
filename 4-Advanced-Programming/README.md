@@ -58,7 +58,7 @@ print(add_all_args(1, 2, 3, 4, 5))  # 15
 
 args and kwargs examples can be found in [03_args_and_kwargs.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/03_args_and_kwargs.py).
 
-### Lambda
+## Lambda
 
 A **lambda** is an anonymous function that can be defined in-line without the use of the `def` keyword. THis is extremely useful when defining a custom sort ordering for a collection. Example:
 
