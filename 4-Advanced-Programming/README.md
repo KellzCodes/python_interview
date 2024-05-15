@@ -92,3 +92,82 @@ func(y=1, x=1)  # this will return 7
 ```
 
 Examples of what you can do with lambda functions can be found in [04_lambda_functions.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/04_lambda_functions.py).
+
+## Map and Filter
+
+**Map** and **Filter** are paradigms of functional programming. They allow the programmer (you) to write simpler, shorter code, without neccessarily needing to bother about intricacies like loops and branching.
+
+Essentially, these two functions allow you to apply a function across a number of iterables, in one fell swoop. `map` and `filter` come built-in with Python (in the `__builtins__` module) and require no importing.
+
+### Map
+
+The map() function in python has the following syntax:
+
+`map(func, *iterables)`
+
+Where `func` is the function on which each element in `iterables` (as many as they are) would be applied on. Notice the asterisk(*) on `iterables`? It means there can be as many iterables as possible, in so `far` func has that exact number as required input arguments. Before we move on to an example, it's important that you note the following:
+
+1. In Python 2, the `map()` function returns a list. In Python 3, however, the function returns a map object which is a generator object. To get the result as a list, the built-in `list()` function can be called on the map object. i.e. `list(map(func, *iterables))`
+2. The number of arguments to `func` must be the number of iterables listed.
+
+Say I have a list (iterable) of my favourite pet names, all in lower case and I need them in uppercase. With `map()` functions, I simply do this:
+
+```
+my_pets = ['alfred', 'tabitha', 'william', 'arla']
+
+uppered_pets = list(map(str.upper, my_pets))
+
+print(uppered_pets)  # Outputs to ['ALFRED', 'TABITHA', 'WILLIAM', 'ARLA']
+```
+
+### Filter
+
+While `map()` passes each element in the iterable through a function and returns the result of all elements having passed through the function, `filter()`, first of all, requires the function to return boolean values (true or false) and then passes each element in the iterable through the function, "filtering" away those that are false. It has the following syntax:
+
+`filter(func, iterable)`
+
+The following points are to be noted regarding `filter()`:
+1. Unlike `map()`, only one iterable is required.
+2. The `func` argument is required to return a boolean type. If it doesn't, `filter` simply returns the iterable passed to it. Also, as only one iterable is required, it's implicit that `func` must only take one argument.
+3. `filter` passes each element in the iterable through `func` and returns only the ones that evaluate to true.
+
+The following is a list (`iterable`) of the scores of 10 students in a Chemistry exam. Let's filter out those who passed with scores more than 75...using `filter`.
+
+```
+scores = [66, 90, 68, 59, 76, 60, 88, 74, 81, 65]
+
+def is_A_student(score):
+    return score > 75
+
+over_75 = list(filter(is_A_student, scores))
+
+print(over_75)  # Outputs to [90, 76, 88, 81]
+```
+
+Examples of what you can do with map and filter can be found in [05_map_and_filter.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/05_map_and_filter.py).
+
+## Function Closures
+
+A **Closure** in Python is a function object that remembers values in enclosing scopes even if they are not present in memory. 
+
+It is a record that stores a function together with an environment: a mapping associating each free variable of the function (variables that are used locally but defined in an enclosing scope) with the value or reference to which the name was bound when the closure was created.
+A closure—unlike a plain function—allows the function to access those captured variables through the closure’s copies of their values or references, even when the function is invoked outside their scope.
+
+```
+# Python program to illustrate 
+# closures 
+def outerFunction(text): 
+
+	def innerFunction(): 
+		print(text) 
+
+	# Note we are returning function
+	# WITHOUT parenthesis
+	return innerFunction 
+
+if __name__ == '__main__': 
+	myFunction = outerFunction('Hey!') 
+	myFunction() 
+```
+
+Examples of function closures can be found in [06_function_closures.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/06_function_closures.py).
