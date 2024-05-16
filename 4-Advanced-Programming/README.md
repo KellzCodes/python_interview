@@ -171,3 +171,56 @@ if __name__ == '__main__':
 ```
 
 Examples of function closures can be found in [06_function_closures.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/06_function_closures.py).
+
+## Decorators
+
+**Decorators** describe a special kind of function that is meant to **wrap** another function. The canonical example is to write a decorator that is meant to pring out the time it took for a given function to execute whenever it is called.
+
+A particular `@` notation is used to indicate that a function should be wrapped by one or more **decorators**:
+
+```
+@timer
+def run_simulation():
+
+    ...
+```
+
+When using multiple decorators the modifications of the second decorator (one furthest to the function) will be applied to the modifications of the first decorator (one closest to the function).
+
+```
+@timer
+@log_output
+def func():
+    ...
+```
+
+Decorator examples can be found in [07_decorators.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/07_decorators.py).
+
+## Iterators
+
+An **iterator** is a special kind of object that implements a single function: `next()`. Iterators historically were created through class definitions which had to implement the `__iter__()` method to create the iterator, in addition to the `__next__()` method. However, most modern programmers opt to use the **generator** syntax nowadays due to increased readability and conciseness.
+
+An iterator raises the `StopIteration` exception when it runs out of elements. This exception is raised from the iterators `__next__` method.
+
+Iterator examples can be found in [08_iterators.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/08_iterators.py).
+
+## Generators
+
+A **Generator** in Python is a function that returns an iterator using the Yield keyword.
+
+A generator function in Python is defined like a normal function, but whenever it needs to generate a value, it does so with the `yield` keyword rather than return. If the body of a def contains `yield`, the function automatically becomes a Python generator function. 
+
+```
+# A generator function that yields 1 for first time, 
+# 2 second time and 3 third time 
+def simpleGeneratorFun(): 
+	yield 1			
+	yield 2			
+	yield 3			
+
+# Driver code to check above generator function 
+for value in simpleGeneratorFun(): 
+	print(value)  # outputs to 1 2 3
+```
+
+Generator examples can be found in [09_generators.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/09_generators.py).
