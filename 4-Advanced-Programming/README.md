@@ -224,3 +224,45 @@ for value in simpleGeneratorFun():
 ```
 
 Generator examples can be found in [09_generators.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/09_generators.py).
+
+## Compilers and Interpreters
+
+### Compiler
+A **compiler** is a program that takes in source code (the code that we, humans, write) and transforms it into code that a machine can interpret (bytecode) or execute (binary code).
+
+### Interpreter
+An **interpreter** is a program that is capable of translating code (typically bytecode) into machine code that can be ran and executed by the CPU (central processing unit). Python code is first compiled into bytecode, that bytecode is then passed to the interpreter where it is interpreted and executed.
+
+### Source Code
+The **source code** is the code that the programmers write and read.
+
+### Bytecode
+**Bytecode** is program code that has been compiled from source code into a lower level language that can be understood by an interpreter.
+
+The first step that occurs when Python is ran is the following. The compiler translates Python source code into bytecode that is then read and executed by the interpreter.
+
+Before the interpreter can execute any code it must first be translated into bytecode. The compiler translates Python source code into bytecode which is lower-level code that can be interpreted by the interpreter. The interpreter then executes bytecode in its execution environment.
+
+## Threads and Processes
+
+### Thread
+A **thread** is a flow of execution of your program. By default, Python will run your program in a single thread, the **main thread**, which will execute your Python code line by line.
+
+When trying to speed up certain programs using **concurrency**, many programs choose to run multiple threads at the same time. The `threading` package that comes pre-installed contains functions and classes that allow you to create new threads and coordinate them.
+
+The most important elements of this library are: `Thread` and `Lock`.
+
+### Process
+A **process** is an application or program that is running on your computer. Processes are allocated their own memory space and always contain at least one thread, but may be split into multiple threads that are executing concurrently.
+
+### Concurrency
+**Concurrency** refers to the ability for parts of a program, application, or algorithm (i.e., multiple threads) to be executed simultaneously.
+
+### Parallelism
+**Parallelism** refers to several computations occurring at the same time. Parallel programs utilize multiple logical processing cores of your CPU to increase speed. This is different from a concurrent program that may only utilize a single logical CPU core.
+
+### Modern Processors
+
+Most modern day processors have more logical cores than they do physical cores due to a technology called hyperthreading (for intel CPU's) and clustered multithreading (for AMD CPU's). This allows each physical core to perform 2 operations at the same time, hence why a 4 core CPU with hyperthreading is said to have 8 logical cores. The number of logical cores determines how many operations can be performed in parallel.
+
+All operations performed by the CPU are a part of a thread and only one operation per thread can be ran at anytime. Therefore, a processor with 8 logical cores can run 8 threads at a time, or more specifically work on 8 operations in 8 different threads simultaneously.
