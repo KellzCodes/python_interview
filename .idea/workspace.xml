@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dd8f2cb-c7f0-4626-b743-41be8aa74962" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/4-Advanced-Programming/asynchronous_fetcher_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4-Advanced-Programming/asynchronous_fetcher_2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4-Advanced-Programming/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/4-Advanced-Programming/README.md" afterDir="false" />
     </list>
@@ -245,7 +247,8 @@
       <workItem from="1715692685308" duration="8288000" />
       <workItem from="1715746452696" duration="131000" />
       <workItem from="1715790557518" duration="9862000" />
-      <workItem from="1715911461782" duration="1464000" />
+      <workItem from="1715911461782" duration="1619000" />
+      <workItem from="1715973662330" duration="10366000" />
     </task>
     <servers />
   </component>

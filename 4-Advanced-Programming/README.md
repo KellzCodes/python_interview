@@ -1,5 +1,22 @@
 # Advanced Programming
 
+### Contents
+- [Modules and Packages](#modules-and-packages)
+- [Files](#files)
+- [*args And **kwargs](#args-and-kwargs)
+- [Lambda Functions](#lambda)
+- [Map and Filter](#map-and-filter)
+- [Function Closures](#function-closures)
+- [Decorators](#decorators)
+- [Iterators](#iterators)
+- [Generators](#generators)
+- [Compilers and Interpreters](#compilers-and-interpreters)
+- [Threads and Processes](#threads-and-processes)
+- [Python Global Interpreter Lock](#python-global-interpreter-lock)
+- [Threads](#threads)
+- [Asynchronous Programming](#asynchronous-programming)
+- [Advanced Programming Assessments](#advanced-programming-assessments)
+
 ## Modules and Packages
 
 ### Main Module
@@ -266,3 +283,100 @@ A **process** is an application or program that is running on your computer. Pro
 Most modern day processors have more logical cores than they do physical cores due to a technology called hyperthreading (for intel CPU's) and clustered multithreading (for AMD CPU's). This allows each physical core to perform 2 operations at the same time, hence why a 4 core CPU with hyperthreading is said to have 8 logical cores. The number of logical cores determines how many operations can be performed in parallel.
 
 All operations performed by the CPU are a part of a thread and only one operation per thread can be ran at anytime. Therefore, a processor with 8 logical cores can run 8 threads at a time, or more specifically work on 8 operations in 8 different threads simultaneously.
+
+## Python Global Interpreter Lock
+
+### Mutex
+
+A **mutex** is a *mutually exclusive lock* that controls the access to a section of code. Mutexes are typically used in multi-threaded programs when a section of code should only be executed by one thread at a time. If one thread has acquired the mutex, all other threads must wait until that thread releases it before they can execute that locked section of code.
+
+## Threads
+
+### Thread
+
+A **thread** is a flow of execution of your program. By default, Python will run your program in a single thread, the **main thread**, which will execute your Python code line by line.
+
+When trying to speed up certain programs using **concurrency**, many programs choose to run multiple threads at the same time. The `threading` package that comes pre-installed contains functions and classes that allow you to create new threads and coordinate them.
+
+The most important elements of this library are: `Thread` and `Lock`.
+
+### Concurrency
+
+**Concurrency** refers to the ability for parts of a program, application or algorithm (i.e., multiple threads) to be executed simultaneously.
+
+### Mutex
+
+A **mutex** is a *mutually exclusive lock* that controls the access to a section of code. Mutexes are typically used in multi-threaded programs when a section of code should only be executed by one thread at a time. If one thread has acquired the mutex, all other threads must wait until that thread releases it before they can execute that locked section of code.
+
+Thread examples can be found in [13_threads.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/13_threads.py).
+
+## Asynchronous Programming
+
+Asynchronous programming refers to a form of multitasking that allows for faster execution of programs and tasks by dividing a single task into smaller chunks of code. This approach makes it easier for a program to process multiple requests at once, allowing the user to make more efficient use of their time and resources. It allows developers to create complex software applications with minimal effort.
+
+In Python, asynchronous programming is based on the event-driven programming model. This involves using ‘callbacks’, or functions that are triggered as soon as an event occurs. These functions can be used to perform a wide variety of tasks, like making an HTTP request, sending a notification, or even executing some long-running code without blocking the main thread. 
+
+Usually, asynchronous code in Python is directly related to an event loop that needs to be triggered. This loop runs continuously and checks for any new events that need to be processed. Once an event is detected and the loop is triggered, the async code will call the appropriate callback function. 
+
+Asynchronous Programming examples can be found in [14_asynchronous_programming.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/14_asynchronous_programming.py).
+
+# Advanced Programming Assessments
+
+## Positive Even Squares
+
+Write a function that accepts any number of positional arguments, all of which you may assume will be lists of integers. Your function should filter all of these lists such that they only contain even positive integers and combine all of the lists into one list of integers. Your function should then modify the combined list such that it contains the squares of all of the elements and return that list.
+
+Use a combination of the `map`, `filter`, and `lambda` functions/keywords to modify the lists.
+
+The solution can be found in [positive_even_squares.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/positive_even_squares.py).
+
+## Integer Sum
+
+Write a function named `integer_sum` that accepts any number of positional arguments, which are assumed to be integers. This function should return the sum of all of these integers.
+
+To handle invalid input (arguments that are not integers) you must write the following decorators and use them to decorate the `integer_sum` function.
+
+- `flatten_lists`: this decorator should flatten any `list` arguments for the decorated function by extracting their elements and passing them as individual arguments instead of the list. For example, if `[1, 2, True]` is an argument, then `1`, `2` and `True` should be extracted and passed as arguments instead of the `list` to the decorated function.
+- `convert_strings_to_ints`: this decorator should convert any string arguments that are valid integers to integers and pass them to the decorated function. Any string that is not a valid integer should be removed as an argument to the decorated function.
+- `filter_integers`: this decorator should remove any argument that is not an integer and call the decorated function with only integer arguments.
+
+You may assume all arguments passed to `integer_sum` will be of type `float`, `int`, `str` or `list`.
+
+The solution can be found in [integer_sum.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/integer_sum.py).
+
+## Generate String
+
+Write a generator that accepts a string and an integer called `frequency` and generates a sequence as follows:  
+`string[0] * frequency + string[1] * frequency + ... + string[-2] * frequency + string[-1] * frequency`.  
+Your generator should **not** store this string, it should generate the next element in the sequence each time its `next` method is called.
+
+You should create this generator in both a functional and class-based way. Your functional generator should be named `generate_string` and your class-based generator (a.k.a. iterator) should be named `GenerateString`.
+
+You may assume that `frequency >= 0`.
+
+The solution can be found in [generate_string.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/generate_string.py).
+
+## Thread Safe Counter
+
+Write a `WordCounter` class that is meant to be able to count words in large texts, so that a user of that class can quickly calculate how many times a specific word occurs in a string. 
+
+`WordCounter` should implement the following methods:
+
+- `process_text(text)` should take in a string, `text`, and update the internal attributes of `WordCounter` in a thread-safe manner. You may assume naively that `text.split(" ")` is good enough to return the list of words in the passed `text`.
+- `get_word_count(word)` should take in a string, `word`, and check how many times that word has been seen in all the texts that this `WordCounter` has processed. If this word has never been seen, you should return `0`.
+
+**NOTE:** This class must be thread-safe; meaning that many threads should be able to use the `WordCounter` at the same time, and the calculations must remain accurate as if only a single thread was using the instance of `WordCounter`.
+
+**NOTE:** You may not use the `Counter` class of the `collections` standard library.
+
+The solutions can be found in [thread_safe_counter_1.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/thread_safe_counter_1.py) and [thread_safe_counter_2.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/thread_safe_counter_2.py).
+
+## Asynchronous Fetcher
+
+Write a `BatchFetcher` class that is meant to fetch lots of records from a database very quickly.
+
+Your constructor takes in a `database` object that has an async method called `async_fetch`. This method takes a record identifier (or `record_id`) and returns whatever the database has in storage for that record.
+
+`BatchFetcher` should implement the async method `fetch_records`, which takes in a list, `record_ids`, and should return the list of records corresponding to those `record_ids`.
+
+The solutions can be found in [asynchronous_fetcher_1.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/asynchronous_fetcher_1.py) and [asynchronous_fetcher_2.py](https://github.com/KellzCodes/python_interview/blob/main/4-Advanced-Programming/asynchronous_fetcher_2.py).
