@@ -4,6 +4,8 @@
 
 A linear collection of data values that are accessible at numbered indices, starting at index 0.
 
+## Types of Arrays
+
 A static array is an implementation of an array that allocates a fixed amount of memory to be used for storing the array's values. Appending values to the array therefore involves copying the entire array and allocating new memory for it, accounting for the extra space needed for the newly appended value. This is a linear-time operation.
 
 A dynamic array is an implementation of an array that preemptively allocates double the amount of memory needed to store the array's values. Appending values to the array is a constant-time operation until the allocated memory is filled up, at which point the array is copied and double the memory is once again allocated for it. This implementation leads to an amortized constant-time insertion-at-end operation.
@@ -14,6 +16,8 @@ A lot of popular programming languages like JavaScript and Python implement arra
 
 Below is a memory canvas that represents 35 slots of memory that will be used for example purposes
 
+![image](https://github.com/KellzCodes/python_interview/assets/19383145/d3dedd47-1eae-46d1-bfe4-1ec7b770ac8b)
+
 Each slot holds 1 byte which is 8 bits. 
 
 Let's say we want to make a list that has 3 integers like [1, 2, 3]....
@@ -23,6 +27,8 @@ Our operating system would transform all 3 integers into their binary number for
 Our operating system will go into the memory canvas and find a series of back to back memory slots that are free and have enough space to allocate or hold three integers.
 
 If the integers are 64 bit integers, they each take 8 bytes or 8 memory slots.  So we need $8 * 3 = 24$ memory slots back to back that don't have anything in them. 
+
+![image](https://github.com/KellzCodes/python_interview/assets/19383145/cf9d314f-9906-4a01-a0ce-e8faac5a419b)
 
 The number of memory slots, which is directly linked to the length of the array, is fixed. 
 
