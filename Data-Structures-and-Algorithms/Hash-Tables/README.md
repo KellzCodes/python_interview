@@ -26,6 +26,8 @@ In python, dictionaries are hash tables.
 
 Below is a hash table where we've got 3 keys, "foo", "bar", and "baz". All 3 keys are mapped respectively to the values 1, 2, and 3.
 
+![image](https://github.com/KellzCodes/python_interview/assets/19383145/589016f9-8cdd-4315-b76e-b44ef6232f8c)
+
 The idea behind a hash table is that you can access a value given a key. For instance, we can very easily access the number one given the key "foo". But we wouldn't be able to do the opposite. We would not be able to find the key "foo" given value 1.
 
 The beauty behind a hash table is that insertion of a new key-value pair, deletion of a key-value pair, or searching for a value given a key are all operations that run in constant time on average.
@@ -47,6 +49,8 @@ Hash tables are built on top of arrays.
 Under the hood, we have an array. For now, the array will have three indices. We will be storing the values of our hash table in the array. That's what's going to allow us to have constant time look up given an index. 
 
 When you're inserting a key-value pair inside a hash table, you use what's called a hash function to transform the key into an index. 
+
+![image](https://github.com/KellzCodes/python_interview/assets/19383145/789c0073-35dc-400f-8ecd-0bea74b86b48)
 
 ### What happens when your hash table is full?
 
