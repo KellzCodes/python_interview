@@ -42,11 +42,15 @@ A circular linked list can be either a singly circular linked list or a doubly c
 
 Below is a memory canvas representing 25 memory slots and a linked list. This will be used for example purposes and does not represent actual memory in a system.
 
+![image](https://github.com/KellzCodes/python_interview/assets/19383145/c667c08e-180b-4a0d-9764-4b44848b2f34)
+
 Unlike arrays, linked lists do not need contiguous (or back to back) memory slots. 
 
 Linked lists are going to store elements in the list anywhere in memory. They are going to connect the elements using pointers. 
 
 Pointers are this tool that allows you to have one memory slot, let's say memory slot 20, point to another memory slot just by storing the other memory slot's address. You can have memory slot 20 point to memory slot 10 which can pont to memory slot 1 which can point to memory slot 22 and so forth.
+
+![image](https://github.com/KellzCodes/python_interview/assets/19383145/1c226267-931a-4d50-be03-8089c399d633)
 
 Let's look at how a linked list is stored in memory. We would create a structure likely called a "node". Each node in the linked list has both a value (such as 3 or 1) and a pointer to the next node in the linked list. So the first node that has value 3 would have a pointer that points to the next node in the linked list... the node with value 1. 
 
@@ -55,6 +59,8 @@ We would store this in memory by having two back to back memory slots for each n
 So we can put node value 3 at memory slot 21 then have a pointer starting at memory slot 22 (value and pointer have to be back to back) then pointing to memory slot 5. Below, we are using arrows but in memory, the number 5 would be written in binary (101). At memory slot 5, we will store the value 1. Then have a pointer starting at memory slot 6 that points to memory slot 2. Memory slot 2 will store the value 4. Then have a pointer starting at memory slot 3 that points to memory slot 16. Memory slot 16 will store the value 2. Then have a pointer starting at memory slot 17 that points to `null` address.
 
 In memory, there are certain memory addresses that kind of act like the null value or the non-value in coding. They are sort of like memory addresses where if you operating system ever reaches them, it kind of knows that it doesn't have to go anywhere else. Below, we can depict it as an orange 0.
+
+![image](https://github.com/KellzCodes/python_interview/assets/19383145/4ec5a6ad-b4a7-4ed0-a9ea-480d4a55dbe0)
 
 ## Complexity
 
