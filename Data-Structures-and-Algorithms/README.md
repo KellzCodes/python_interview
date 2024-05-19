@@ -1,5 +1,18 @@
 # Data Structures and Algorithms
 
+### Contents
+- [What are data structures?](#what-are-data-structures)
+- [Complexity Analysis](#complexity-analysis)
+- [Memory](#memory)
+- [Big O Notation](#big-o-notation)
+- [Logarithm](#logarithm)
+- [What is an algorithm?](#what-is-an-algorithm)
+- [Use of the Algorithms](#use-of-the-algorithms)
+- [What is the need for algorithms?](#what-is-the-need-for-algorithms)
+- [What are the Characteristics of an Algorithm?](#what-are-the-characteristics-of-an-algorithm)
+- [Properties of Algorithm](#properties-of-algorithm)
+- [Types of Algorithms](#types-of-algorithms)
+
 ## What are data structures?
 
 Data Structures are a way of organizing data so that it can be accessed more efficiently depending upon the situation. Data Structures are fundamentals of any programming language around which a program is built. Python helps to learn the fundamental of these data structures in a simpler way as compared to other programming languages.
