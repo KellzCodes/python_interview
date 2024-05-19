@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3dd8f2cb-c7f0-4626-b743-41be8aa74962" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Data-Structures-and-Algorithms/Arrays/Easy-Array-Algorithms/Two-Number-Sum/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3dd8f2cb-c7f0-4626-b743-41be8aa74962" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -247,7 +244,7 @@
       <workItem from="1715790557518" duration="9862000" />
       <workItem from="1715911461782" duration="1619000" />
       <workItem from="1715973662330" duration="11323000" />
-      <workItem from="1716084193650" duration="12495000" />
+      <workItem from="1716084193650" duration="13059000" />
     </task>
     <servers />
   </component>
