@@ -58,6 +58,8 @@ Below is an illustration of traversing through the array. We solve for `y` and s
 
 ![image](https://github.com/KellzCodes/python_interview/assets/19383145/de1033a5-2515-43b8-87b5-4a3b535c580c)
 
+Solution 1 can be found in [hash_solution.py](https://github.com/KellzCodes/python_interview/blob/main/Data-Structures-and-Algorithms/Arrays/Easy-Array-Algorithms/Two-Number-Sum/hash_solution.py).
+
 ## Solution 2 Walkthrough
 
 This solution is not the most optimal because it runs in `O(log(n))` time and `O(1)` space
@@ -75,3 +77,5 @@ If the sum of the pointers are bigger than the target sum, we move the right poi
 This solution is `O(nlog(n))` because of the sorting.
 
 ![image](https://github.com/KellzCodes/python_interview/assets/19383145/c51ff1d9-44f8-43e8-8efe-24089079078c)
+
+Solution 2 can be found in [pointer_solution.py](https://github.com/KellzCodes/python_interview/blob/main/Data-Structures-and-Algorithms/Arrays/Easy-Array-Algorithms/Two-Number-Sum/pointer_solution.py).
