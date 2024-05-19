@@ -95,3 +95,7 @@ Then we move `i` to the left because we have filled the last position. We also m
 ## Brute Force
 
 Brute force solution will run in `O(nlog(n))` time because of sorting method. And `O(N)` space where N is the number of integers in the input array.
+
+## Solution Files
+
+The solutions can be found in [linear_solution.py](https://github.com/KellzCodes/python_interview/blob/main/Data-Structures-and-Algorithms/Arrays/Easy-Array-Algorithms/Sorted-Squared-Array/linear_solution.py) and [brute_force_solution.py](https://github.com/KellzCodes/python_interview/blob/main/Data-Structures-and-Algorithms/Arrays/Easy-Array-Algorithms/Sorted-Squared-Array/brute_force_solution.py).

@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dd8f2cb-c7f0-4626-b743-41be8aa74962" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Data-Structures-and-Algorithms/Arrays/Easy-Array-Algorithms/Sorted-Squared-Array/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data-Structures-and-Algorithms/Arrays/Easy-Array-Algorithms/Sorted-Squared-Array/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Data-Structures-and-Algorithms/Arrays/Easy-Array-Algorithms/Sorted-Squared-Array/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +248,7 @@
       <workItem from="1715911461782" duration="1619000" />
       <workItem from="1715973662330" duration="11323000" />
       <workItem from="1716084193650" duration="13902000" />
-      <workItem from="1716145696063" duration="3099000" />
+      <workItem from="1716145696063" duration="4937000" />
     </task>
     <servers />
   </component>
