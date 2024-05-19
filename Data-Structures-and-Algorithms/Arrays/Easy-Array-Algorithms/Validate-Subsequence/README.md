@@ -60,3 +60,5 @@ Once you find all the elements in the subsequence, you can stop the algorithm. E
 The time complexity is `O(N)` time where N is the length of the main array
 
 The space complexity is `O(1)` space because we are not storing anything extra. 
+
+The solutions can be found in [while_loop_solution.py](https://github.com/KellzCodes/python_interview/blob/main/Data-Structures-and-Algorithms/Arrays/Easy-Array-Algorithms/Validate-Subsequence/while_loop_solution.py) and [for_loop_solution.py](https://github.com/KellzCodes/python_interview/blob/main/Data-Structures-and-Algorithms/Arrays/Easy-Array-Algorithms/Validate-Subsequence/for_loop_solution.py).
