@@ -48,11 +48,15 @@ In our example, `target sum = 10` and `current num = x`
 
 We want to find `y`such that `x + y = 10`. In other words, we can isolate `y` so that `y = 10 - x`
 
+![image](https://github.com/KellzCodes/python_interview/assets/19383145/58a13f05-030a-4996-aacf-32ddd7bb9dce)
+
 If `y` is in our hash table, then we just return `x` and `y`. Accessing the hash table can be done in `O(1)` time. 
 
 Otherwise we keep traversing the array and we just make sure to store `x` in the hash table. 
 
 Below is an illustration of traversing through the array. We solve for `y` and store the `x` values in the hash table as `True`
+
+![image](https://github.com/KellzCodes/python_interview/assets/19383145/de1033a5-2515-43b8-87b5-4a3b535c580c)
 
 ## Solution 2 Walkthrough
 
@@ -69,3 +73,5 @@ If the sum of the pointers are smaller than the target sum, we move the left poi
 If the sum of the pointers are bigger than the target sum, we move the right pointer to the left to a smaller number.
 
 This solution is `O(nlog(n))` because of the sorting.
+
+![image](https://github.com/KellzCodes/python_interview/assets/19383145/c51ff1d9-44f8-43e8-8efe-24089079078c)
