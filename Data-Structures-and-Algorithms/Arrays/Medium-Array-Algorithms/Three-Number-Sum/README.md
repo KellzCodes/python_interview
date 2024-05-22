@@ -114,7 +114,7 @@ Consider the array `[1, 2, 3, 4, 5, 6]` and the target sum `10`:
   - `currentSum = 1 + 3 + 6 = 10` (equal to 10, add `[1, 3, 6]` to `triplets`)
   - Move `left` to 3, `right` to 4
   - `currentSum = 1 + 4 + 5 = 10` (equal to 10, add `[1, 4, 5]` to `triplets`)
-  - For `i = 1` (`array[i] = 2`):
+- For `i = 1` (`array[i] = 2`):
     - `left = 2`, `right = 5`
     - `currentSum = 2 + 3 + 6 = 11` (greater than 10, move `right` to 4)
     - `currentSum = 2 + 3 + 5 = 10` (equal to 10, add `[2, 3, 5]` to `triplets`)
