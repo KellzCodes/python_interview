@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3dd8f2cb-c7f0-4626-b743-41be8aa74962" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Data-Structures-and-Algorithms/Arrays/Easy-Array-Algorithms/Transpose-Matrix/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data-Structures-and-Algorithms/Arrays/Medium-Array-Algorithms/Three-Number-Sum/three_number_sum.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,31 +32,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.11_lists.executor": "Run",
-    "Python.12_strings.executor": "Debug",
-    "Python.15_while_loops.executor": "Run",
-    "Python.17_dictionaries.executor": "Run",
-    "Python.20_functions.executor": "Run",
-    "Python.21_mutability.executor": "Run",
-    "Python.4_variablesAndPrinting.executor": "Run",
-    "Python.6_arithmetic_operators.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/kelda/OneDrive/Documents/pythonProject",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.11_lists.executor&quot;: &quot;Run&quot;,
+    &quot;Python.12_strings.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.15_while_loops.executor&quot;: &quot;Run&quot;,
+    &quot;Python.17_dictionaries.executor&quot;: &quot;Run&quot;,
+    &quot;Python.20_functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.21_mutability.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4_variablesAndPrinting.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6_arithmetic_operators.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.three_number_sum.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kelda/OneDrive/Documents/pythonProject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.12_strings">
+}</component>
+  <component name="RunManager" selected="Python.three_number_sum">
     <configuration name="12_strings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="ENV_FILES" value="" />
@@ -72,29 +73,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2-Fundamentals/12_strings.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="15_while_loops" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonProject" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/2-Fundamentals" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2-Fundamentals/15_while_loops.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -195,13 +173,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="three_number_sum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Data-Structures-and-Algorithms/Arrays/Medium-Array-Algorithms/Three-Number-Sum" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data-Structures-and-Algorithms/Arrays/Medium-Array-Algorithms/Three-Number-Sum/three_number_sum.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.three_number_sum" />
         <item itemvalue="Python.12_strings" />
         <item itemvalue="Python.21_mutability" />
         <item itemvalue="Python.20_functions" />
         <item itemvalue="Python.17_dictionaries" />
-        <item itemvalue="Python.15_while_loops" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +252,8 @@
       <workItem from="1716084193650" duration="13902000" />
       <workItem from="1716145696063" duration="12340000" />
       <workItem from="1716231529382" duration="1416000" />
-      <workItem from="1716342407709" duration="1999000" />
+      <workItem from="1716342407709" duration="4127000" />
+      <workItem from="1716417948238" duration="291000" />
     </task>
     <servers />
   </component>
