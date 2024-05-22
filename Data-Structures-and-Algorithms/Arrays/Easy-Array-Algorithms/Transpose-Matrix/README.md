@@ -78,7 +78,7 @@ O(w * h) time | O(w * h) space - where w is the width of the matrix and h is the
 
 ## Solution Walkthrough
 
-The solution code can be found in [transpose_matrix.py](#https://github.com/KellzCodes/python_interview/blob/main/Data-Structures-and-Algorithms/Arrays/Easy-Array-Algorithms/Transpose-Matrix/transpose_matrix.py)
+The solution code can be found in [transpose_matrix.py](https://github.com/KellzCodes/python_interview/blob/main/Data-Structures-and-Algorithms/Arrays/Easy-Array-Algorithms/Transpose-Matrix/transpose_matrix.py)
 
 The function `transposeMatrix(matrix)` takes a 2D list (matrix) as input and returns its transpose. The transpose of a matrix is obtained by swapping its rows and columns. Here's a detailed breakdown of the function:
 
