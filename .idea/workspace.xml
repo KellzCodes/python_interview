@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3dd8f2cb-c7f0-4626-b743-41be8aa74962" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Data-Structures-and-Algorithms/Arrays/Medium-Array-Algorithms/Smallest-Difference/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="3dd8f2cb-c7f0-4626-b743-41be8aa74962" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -254,7 +251,7 @@
       <workItem from="1716231529382" duration="1416000" />
       <workItem from="1716342407709" duration="4127000" />
       <workItem from="1716417948238" duration="291000" />
-      <workItem from="1716418720039" duration="4717000" />
+      <workItem from="1716418720039" duration="6014000" />
     </task>
     <servers />
   </component>
