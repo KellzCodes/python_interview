@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3dd8f2cb-c7f0-4626-b743-41be8aa74962" name="Changes" comment="" />
+    <list default="true" id="3dd8f2cb-c7f0-4626-b743-41be8aa74962" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,31 +31,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.11_lists.executor": "Run",
-    "Python.12_strings.executor": "Debug",
-    "Python.15_while_loops.executor": "Run",
-    "Python.17_dictionaries.executor": "Run",
-    "Python.20_functions.executor": "Run",
-    "Python.21_mutability.executor": "Run",
-    "Python.4_variablesAndPrinting.executor": "Run",
-    "Python.6_arithmetic_operators.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.three_number_sum.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/kelda/OneDrive/Documents/pythonProject",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "aDefault",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.11_lists.executor&quot;: &quot;Run&quot;,
+    &quot;Python.12_strings.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.15_while_loops.executor&quot;: &quot;Run&quot;,
+    &quot;Python.17_dictionaries.executor&quot;: &quot;Run&quot;,
+    &quot;Python.20_functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.21_mutability.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4_variablesAndPrinting.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6_arithmetic_operators.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.three_number_sum.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/kelda/OneDrive/Documents/pythonProject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.three_number_sum">
     <configuration name="12_strings" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
@@ -253,6 +255,8 @@
       <workItem from="1716417948238" duration="291000" />
       <workItem from="1716418720039" duration="6014000" />
       <workItem from="1716499825395" duration="4733000" />
+      <workItem from="1716601814296" duration="30000" />
+      <workItem from="1716605725506" duration="15000" />
     </task>
     <servers />
   </component>
