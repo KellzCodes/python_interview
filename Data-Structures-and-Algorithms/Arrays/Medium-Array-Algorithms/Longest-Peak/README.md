@@ -42,7 +42,7 @@ The solution code can be found in [longest_peak.py](https://github.com/KellzCode
 
 ### Step 1: Define the Function
 
-We'll start by defining our function longestPeak which takes an array as an input parameter.
+We'll start by defining our function `longestPeak` which takes an array as an input parameter.
 
 ```
 def longestPeak(array):
