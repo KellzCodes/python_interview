@@ -19,17 +19,27 @@ True
 
 ## Hints
 
-### Hint 1
+#### Click the arrows to see the hints
+
+<details>
+  <summary><b>Hint 1</b></summary>
 You can solve this question by iterating through the main input array once.
+</details>
 
-### Hint 2
+<details>
+  <summary><b>Hint 2</b></summary>
 Iterate through the main array, and look for the first integer in the potential subsequence. If you find that integer, keep on iterating through the main array, but now look for the second integer in the potential subsequence. Continue this process until you either find every integer in the potential subsequence or you reach the end of the main array.
+</details>
 
-### Hint 3
+<details>
+  <summary><b>Hint 3</b></summary>
 To actually implement what Hint #2 describes, you'll have to declare a variable holding your position in the potential subsequence. At first, this position will be the 0th index in the sequence; as you find the sequence's integers in the main array, you'll increment the position variable until you reach the end of the sequence.
+</details>
 
-### Optimal Space & Time Complexity
+<details>
+  <summary><b>Optimal Space & Time Complexity</b></summary>
 O(n) time | O(1) space - where n is the length of the array
+</details>
 
 ## Solution Walkthrough
 
