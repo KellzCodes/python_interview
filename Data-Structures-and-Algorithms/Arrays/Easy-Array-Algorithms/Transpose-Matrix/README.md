@@ -64,17 +64,27 @@ matrix = [
 
 ## Hints
 
-**Hint 1**  
+#### Click the arrow to see the hints
+
+<details>
+  <summary><b>Hint 1</b></summary> 
 The row and column indices of each entry in the matrix should be flipped. For example, the value at `matrix[1][2]` will be at `matrix[2][1]` in the transpose of the matrix.
+</details>
 
-**Hint 2**  
+<details>
+  <summary><b>Hint 2</b></summary>  
 Each column in the matrix should become a row in the transpose of the matrix. Each row in the matrix should become a column in the transpose of the matrix.
+</details>
 
-**Hint 3**  
+<details>
+  <summary><b>Hint 3</b></summary>  
 Try iterating one column at a time, and with each column, create a row of the values to add to the transpose of the matrix.
+</details>
 
-**Optimal Space & Time Complexity**  
+<details>
+  <summary><b>Optimal Space & Time Complexity</b></summary>
 O(w * h) time | O(w * h) space - where w is the width of the matrix and h is the height
+</details>
 
 ## Solution Walkthrough
 
