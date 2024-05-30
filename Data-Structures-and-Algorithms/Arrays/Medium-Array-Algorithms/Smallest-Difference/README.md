@@ -8,17 +8,27 @@ You can assume that there will only be one pair of numbers with the smallest dif
 
 ## Hints
 
-### Hint 1
+#### Click the arrows to see the hints
+
+<details>
+  <summary><b>Hint 1</b></summary>
 Instead of generating all possible pairs of numbers, try somehow only looking at pairs that you know could actually have the smallest difference. How can you accomplish this?
+</details>
 
-### Hint 2
+<details>
+  <summary><b>Hint 2</b></summary>
 Would it help if the two arrays were sorted? If the arrays were sorted and you were looking at a given pair of numbers, could you efficiently find the next pair of numbers to look at? What are the runtime implications of sorting the arrays?
+</details>
 
-### Hint 3
+<details>
+  <summary><b>Hint 3</b></summary>
 Start by sorting both arrays, as per Hint #2. Put a pointer at the beginning of both arrays and evaluate the absolute difference of the pointer-numbers. If the difference is equal to zero, then you've found the closest pair; otherwise, increment the pointer of the smaller of the two numbers to find a potentially better pair. Continue until you get a pair with a difference of zero or until one of the pointers gets out of range of its array.
+</details>
 
-### Optimal Space & Time Complexity
+<details>
+  <summary><b>Optimal Space & Time Complexity</b></summary>
 O(nlog(n) + mlog(m)) time | O(1) space - where n is the length of the first input array and m is the length of the second input array.
+</details>
 
 ## Solution Walkthrough
 
