@@ -23,21 +23,27 @@ array = [
 
 ## Hints
 
-**Hint 1**
+#### Click the arrows to see the hints
 
+<details>
+  <summary><b>Hint 1</b></summary>
 You can think of the spiral that you have to traverse as a set of rectangle perimeters that progressively get smaller (i.e., that progressively move inwards in the two-dimensional array).
+</details>
 
-**Hint 2**
-
+<details>
+  <summary><b>Hint 2</b></summary>
 Going off of Hint #1, declare four variables: a starting row, a starting column, an ending row, and an ending column. These four variables represent the bounds of the first rectangle perimeter in the spiral that you have to traverse. Traverse that perimeter using those bounds, and then move the bounds inwards. End your algorithm once the starting row passes the ending row or the starting column passes the ending column.
+</details>
 
-**Hint 3**
-
+<details>
+  <summary><b>Hint 3</b></summary>
 You can solve this problem both iteratively and recursively following very similar logic.
+</details>
 
-**Optimal Space & Time Complexity**
-
+<details>
+  <summary><b>Optimal Space & Time Complexity</b></summary>
 O(n) time | O(n) space - where n is the total number of elements in the array.
+</details>
 
 ## Solution Walkthrough
 
