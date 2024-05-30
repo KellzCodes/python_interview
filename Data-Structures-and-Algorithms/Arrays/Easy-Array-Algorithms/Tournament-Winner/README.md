@@ -29,17 +29,27 @@ results = [0, 0, 1]
 
 ## Hints
 
-### Hint 1
+#### Click the arrows to see the hints
+
+<details>
+  <summary><b>Hint 1</b></summary>
 Don't overcomplicate this problem. How would you solve it by hand? Consider that approach, and try to translate it into code.
+</details>
 
-### Hint 2
+<details>
+  <summary><b>Hint 2</b></summary>
 Use a hash table to store the total points collected by each team, with the team names as keys in the hash table. Once you know how many points each team has, how can you determine which one is the winner?
+</details>
 
-### Hint 3
+<details>
+  <summary><b>Hint 3</b></summary>
 Loop through all of the competitions, and update the hash table at every iteration. For each competition, consider the name of the winning team; if the name already exists in the hash table, update that entry by adding 3 points to it. If the team name doesn't exist in the hash table, add a new entry in the hash table with the key as the team name and the value as 3 (since the team won its first competition). While looping through all of the competitions, keep track of the team with the highest score, and at the end of the algorithm, return the team with the highest score.
+</details>
 
-### Optimal Space & Time Complexity
+<details>
+  <summary><b>Optimal Space & Time Complexity</b></summary>
 O(n) time | O(k) space - where n is the number of competitions and k is the number of teams
+</details>
 
 ## Concept Walkthrough
 
