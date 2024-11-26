@@ -646,7 +646,7 @@ Python bitwise operators are used to perform bitwise calculations on integers. T
 
 The Python Bitwise AND (&) operator takes two equal-length bit patterns as parameters. The two-bit integers are compared. If the bits in the compared positions of the bit patterns are 1, then the resulting bit is 1. If not, it is 0.
 
-Example: Take two bit values X and Y, where X = 7= (111)~2~ and Y = 4 = (100)~2~. Take Bitwise and of both X & Y.
+Example: Take two bit values X and Y, where X = 7= (111)<sub>2</sub> and Y = 4 = (100)<sub>2</sub>. Take Bitwise and of both X & Y.
 
 ![image](https://github.com/user-attachments/assets/6b8c895a-028b-43c0-a24e-339a81bce1f0)
 
@@ -663,7 +663,7 @@ Output: a & b = 0
 
 The Python Bitwise OR (|) Operator takes two equivalent length bit designs as boundaries; if the two bits in the looked-at position are both 0, the next bit is zero. If not, it is 1.
 
-Example: Take two bit values X and Y, where X = 7= (111)~2~ and Y = 4 = (100)~2~. Take Bitwise OR of both X, Y.
+Example: Take two bit values X and Y, where X = 7= (111)<sub>2</sub> and Y = 4 = (100)<sub>2</sub>. Take Bitwise OR of both X, Y.
 
 ![image](https://github.com/user-attachments/assets/65ee8cae-cd96-43fd-81d9-7a6615de9f64)
 
@@ -680,7 +680,7 @@ Output: a | b = 14
 
 The Python Bitwise XOR (^) Operator also known as the exclusive OR operator, is used to perform the XOR operation on two operands. XOR stands for “exclusive or”, and it returns true if and only if exactly one of the operands is true. In the context of bitwise operations, it compares corresponding bits of two operands. If the bits are different, it returns 1; otherwise, it returns 0.
 
-Example: Take two bit values X and Y, where X = 7= (111)~2~ and Y = 4 = (100)~2~. Take Bitwise and of both X & Y.
+Example: Take two bit values X and Y, where X = 7= (111)<sub>2</sub> and Y = 4 = (100)<sub>2</sub>. Take Bitwise and of both X & Y.
 
 ![image](https://github.com/user-attachments/assets/de14af46-70b9-4383-9d6c-e2ae6bdd1889)
 
@@ -699,7 +699,7 @@ The preceding three bitwise operators are binary operators, necessitating two op
 
 The Python Bitwise Not (~) Operator works with a single value and returns its one’s complement. This means it toggles all bits in the value, transforming 0 bits to 1 and 1 bits to 0, resulting in the one’s complement of the binary number.
 
-Example: Take two bit values X and Y, where X = 5= (101)~2~. Take Bitwise NOT of X.
+Example: Take two bit values X and Y, where X = 5= (101)<sub>2</sub>. Take Bitwise NOT of X.
 
 ![image](https://github.com/user-attachments/assets/7aaaf5a7-a3ba-43cd-a918-3f1c7982a9f1)
 
