@@ -26,6 +26,7 @@ To start using Python you need to download it, which you can do [here](https://w
 - [Scope](#scope)
 - [Math](#math)
 - [Sorting](#sorting)
+- [Bitwise Manipulation](#bitwise-manipulation)
 - [Misc. Python Syntax](#misc-python-syntax)
 - [Programming Fundamentals Assessments](#programming-fundamentals-assessments)
 
@@ -636,6 +637,131 @@ Examples of what you can do with math and random can be found in [23_math.py](ht
 Python lists have a built-in `.sort()` method that modifies the list in-place. There is also a `sorted()` built-in function that builds a new sorted list from an iterable.
 
 Examples of what you can do with sorting can be found in [24_sorting.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/24_sorting.py).
+
+## Bitwise Manipulation
+
+Python bitwise operators are used to perform bitwise calculations on integers. The integers are first converted into binary and then operations are performed on each bit or corresponding pair of bits, hence the name bitwise operators. The result is then returned in decimal format.
+
+**Bitwise AND Operator**
+
+The Python Bitwise AND (&) operator takes two equal-length bit patterns as parameters. The two-bit integers are compared. If the bits in the compared positions of the bit patterns are 1, then the resulting bit is 1. If not, it is 0.
+
+Example: Take two bit values X and Y, where X = 7= (111)~2~ and Y = 4 = (100)~2~. Take Bitwise and of both X & Y.
+
+![image](https://github.com/user-attachments/assets/6b8c895a-028b-43c0-a24e-339a81bce1f0)
+
+```
+a = 10
+b = 4
+
+# Print bitwise AND operation
+print("a & b =", a & b)
+```
+Output: a & b = 0
+
+**Bitwise OR Operator**
+
+The Python Bitwise OR (|) Operator takes two equivalent length bit designs as boundaries; if the two bits in the looked-at position are both 0, the next bit is zero. If not, it is 1.
+
+Example: Take two bit values X and Y, where X = 7= (111)~2~ and Y = 4 = (100)~2~. Take Bitwise OR of both X, Y.
+
+![image](https://github.com/user-attachments/assets/65ee8cae-cd96-43fd-81d9-7a6615de9f64)
+
+```
+a = 10
+b = 4
+
+# Print bitwise OR operation
+print("a | b =", a | b)
+```
+Output: a | b = 14
+
+**Bitwise XOR Operator**
+
+The Python Bitwise XOR (^) Operator also known as the exclusive OR operator, is used to perform the XOR operation on two operands. XOR stands for “exclusive or”, and it returns true if and only if exactly one of the operands is true. In the context of bitwise operations, it compares corresponding bits of two operands. If the bits are different, it returns 1; otherwise, it returns 0.
+
+Example: Take two bit values X and Y, where X = 7= (111)~2~ and Y = 4 = (100)~2~. Take Bitwise and of both X & Y.
+
+![image](https://github.com/user-attachments/assets/de14af46-70b9-4383-9d6c-e2ae6bdd1889)
+
+```
+a = 10
+b = 4
+
+# print bitwise XOR operation
+print("a ^ b =", a ^ b)
+```
+Output: a ^ b = 14
+
+**Bitwise NOT Operator**
+
+The preceding three bitwise operators are binary operators, necessitating two operands to function. However, unlike the others, this operator operates with only one operand.
+
+The Python Bitwise Not (~) Operator works with a single value and returns its one’s complement. This means it toggles all bits in the value, transforming 0 bits to 1 and 1 bits to 0, resulting in the one’s complement of the binary number.
+
+Example: Take two bit values X and Y, where X = 5= (101)~2~. Take Bitwise NOT of X.
+
+![image](https://github.com/user-attachments/assets/7aaaf5a7-a3ba-43cd-a918-3f1c7982a9f1)
+
+```
+a = 10
+
+# Print bitwise NOT operation
+print("~a =", ~a)
+```
+Output: ~a = -11
+
+### Bitwise Shift
+
+These operators are used to shift the bits of a number left or right thereby multiplying or dividing the number by two respectively. They can be used when we have to multiply or divide a number by two.
+
+**Python Bitwise Right Shift**
+
+Shifts the bits of the number to the right and fills 0 on voids left( fills 1 in the case of a negative number) as a result. Similar effect as of dividing the number with some power of two.
+
+Example 1:
+a = 10 = 0000 1010 (Binary)
+a >> 1 = 0000 0101 = 5
+
+Example 2:
+a = -10 = 1111 0110 (Binary)
+a >> 1 = 1111 1011 = -5 
+
+```
+a = 10
+b = -10
+
+# print bitwise right shift operator
+print("a >> 1 =", a >> 1)
+print("b >> 1 =", b >> 1)
+```
+Ouput: a >> 1 = 5
+b >> 1 = -5
+
+**Python Bitwise Left Shift**
+
+Shifts the bits of the number to the left and fills 0 on voids right as a result. Similar effect as of multiplying the number with some power of two.
+
+Example 1:
+a = 5 = 0000 0101 (Binary)
+a << 1 = 0000 1010 = 10
+a << 2 = 0001 0100 = 20 
+
+Example 2:
+b = -10 = 1111 0110 (Binary)
+b << 1 = 1110 1100 = -20
+b << 2 = 1101 1000 = -40
+
+```
+a = 5
+b = -10
+
+# print bitwise left shift operator
+print("a << 1 =", a << 1)
+print("b << 1 =", b << 1)
+```
+Output: a << 1 = 10
+b << 1 = -20
 
 ## Misc. Python Syntax
 
