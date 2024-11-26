@@ -763,6 +763,8 @@ print("b << 1 =", b << 1)
 Output: a << 1 = 10
 b << 1 = -20
 
+Examples of what you can do with bit manipulation can be found in [26_bitwise_manipulation.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/26_bitwise_manipulation.py)
+
 ## Misc. Python Syntax
 
 Examples of miscellaneous Python syntax can be found in [25_misc_syntax.py](https://github.com/KellzCodes/python_interview/blob/main/2-Fundamentals/25_misc_syntax.py).
